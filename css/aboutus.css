@@ -1,0 +1,22 @@
+/**
+* ABOUT US
+* lead paragraph
+*/
+
+.au-Wrapper {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.au-Heading {
+  font-size: 48px;
+  text-transform: uppercase;
+  background-color: #fff;
+  margin-bottom: 24px;
+}
+
+.au-Paragraph {
+  font-size: 28px;
+  line-height: 40px;
+  margin: 0;
+}

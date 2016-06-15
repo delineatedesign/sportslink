@@ -22,7 +22,7 @@ body {
 
 .full-height {
   height: 100vh;
-  background-image: url("../img/PA-photo 2.jpg");
+  background-image: url("../img/swim.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -42,7 +42,7 @@ body {
   position: absolute;
   width: 500px;
   padding-top: 500px;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, .6);
   border-radius: 999px;
 
 }

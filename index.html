@@ -4,220 +4,218 @@
   <meta charset="UTF-8">
   <title>A Pen by  soren</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/hero-fullscreen.css">
+  <link rel="stylesheet" href="css/aboutus.css">
+  <link rel="stylesheet" href="css/submenu.css">
+  <link rel="stylesheet" href="css/maincontent.css">
+  <link rel="stylesheet" href="css/footer.css">
+
   <link href='https://fonts.googleapis.com/css?family=Raleway:300,700' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
 
-  <div class="nav">
-    <div class="left">
-      <a href=""><img src="img/logo.jpg" alt="" /></a>
+  <div class="overlay">
+    
+  </div>
+
+  <div id="skrollr-body">
+
+    <!--
+    * 1. HEADER
+    * sportslink logo and navigation
+    -->
+    <div class="header nav">
+      <!-- header logo -->
+      <div class="left">
+        <a href=""><img src="img/logo.jpg" alt="" /></a>
+      </div>
+      <!-- header navigation -->
+      <div class="right">
+        <ul>
+          <li><a href="#whoweare">Who We Are</a></li>
+          <li><a href="#whatwedo">What We Do</a></li>
+          <li><a href="#clients">Clients</a></li>
+          <li><a href="#candidates">Candidates</a></li>
+          <li><a href="#footer">Upload CV</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="right" style="line-height: 69px;">
-    About Us
-    Who We Are
-    What We Do
-    Clients
-    Candidates
-    Upload CV
-  </div>
-  </div>
 
-  <div class="wrapper">
-    <div class="full-height">
-      <div style="position: absolute; top: 0; right: 0; bottom: 0; left: 0;">
-        <div class="center-heroWrapper">
-          <div class="center-hero">
+    <!--
+      * 2. FULLSCREEN HEADING WITH BACKGROUND IMAGE
+      * width 100% height 100%
+    -->
 
-            <div style="position: relative;">
-              <div>
-            <h1 class="header-h1">We Connect</h1>
-            <h2 class="header-h2">Carefully selected clients<br>&amp; outstanding candidates</h2>
+    <div class="wrapper">
+      <div class="full-height">
+        <div class="text-wrapper">
+          <div style="position: absolute; top: 0; right: 0; bottom: 0; left: 0;">
+            <div class="center-heroWrapper">
+              <div class="center-hero" >
+                <div style="position: relative;">
+                  <div>
+                    <h1 class="header-h1">We Connect</h1>
+                    <h2 class="header-h2">Carefully selected clients<br>&amp; outstanding candidates</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="hintarrow">
+                <a href=""><div>hint</div></a>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+    </div>
+
+    <!--
+      * 3. ABOUT US
+      * lead paragraph
+    -->
+
+    <div id="aboutus" class="au-Wrapper">
+      <h2 class="au-Heading">About Us</h2>
+      <p class="au-Paragraph">SportsLink is a leading sports recruitment agency,<br>specialising in placing elite sports professionals<br>into career advancing job roles worldwide.</p>
+    </div>
+
+    <!--
+      * 4. SUB NAVIGATION
+      * links to "who we are", "what we do", "clients", "candidates"
+    -->
+
+    <div class="submenuWrapper">
+      <ul class="submenu">
+        <li><a href="#whoweare">Who we are</a></li>
+        <li><a href="#whatwedo">What we do</a></li>
+        <li><a href="#clients">Clients</a></li>
+        <li><a href="#candidates">Candidates</a></li>
+      </ul>
+    </div>
+
+    <!--
+      * 5. MAIN CONTENT
+      * "who we are", "what we do", "clients/upload CV", "candidates"
+    -->
+
+    <div class="main-content">
+
+      <!-- Who We Are -->
+      <div class="flex" style="font-size: 0;" id="whoweare">
+        <div class="grid-item-text">
+          <h2>Who We Are</h2>
+          <p>We concentrate on building long term relationships with the <strong>leading clubs</strong>, <strong>brands</strong>, <strong>associations</strong>, <strong>venues</strong> and <strong>unions worldwide</strong>.</p>
+          <p>We act as the connection between carefully selected <strong>clients</strong> and outstanding <strong>candidates</strong>.</p>
+        </div>
+        <div data--100-bottom-top="-webkit-filter:grayscale(100%);filter:grayscale(100%)" data--100-bottom-bottom="-webkit-filter:grayscale(0%);filter:grayscale(0%)" class="grid-item-image" style="background: url('img/Candidate.jpg');background-size: cover;background-position: center center;">
+        </div>
+      </div>
+
+      <!-- What We Do-->
+      <div class="flex" style="font-size: 0;" id="whatwedo">
+        <div class="grid-item-image" style="background: url('img/swim.jpg');
+        background-size: cover; background-position: center center;" data--100-bottom-top=" -webkit-filter:grayscale(100%);filter:grayscale(100%)" data--100-bottom-bottom="-webkit-filter:grayscale(0%);filter:grayscale(0%)">
+        </div>
+        <div class="grid-item-text">
+          <h2>What We Do</h2>
+          <p>We concentrate on building long term relationships with the leading clubs, brands, associations, venues and unions worldwide.</p>
+          <p>We act as the connection between carefully selected clients and outstanding candidates.</p>
+        </div>
+      </div>
+      <!-- Clients -->
+      <div class="flex" style="font-size: 0;" id="clients">
+        <div class="grid-item-text">
+          <h2>Clients</h2>
+          <p>We offer flexible, temporary and permanent recruitment solutions that will deliver results.</p>
+          <p>Our recruitment consultants offer in-depth industry knowledge and build strong, long term relationships with our clients.</p>
+          <p>Taking the time to source the best talent in the industry, each candidate is screened and vetted assuring only the best quality of candidates are presented to you.</p>
+        </div>
+        <div class="grid-item-text" style="padding: 0;">
+          <div style="height: 440px; font-size: 0;">
+            <div style="display: inline-block; width: 50%; height: 220px;" class="box" data-top-top="background:hsl(0,50%,75%);" data-bottom-bottom="background:hsl(180,50%,75%);">
+              slkdl;skl;
+            </div>
+            <div style="display: inline-block; width: 50%; height: 220px;" class="box" data-center-top="background:hsl(0,50%,75%);" data-center-bottom="background:hsl(180,50%,75%);">
+              slkdl;skl;
+            </div>
+            <div style="display: inline-block; width: 50%; height: 220px;" id="bacon" class="box" data-center-center="background:hsl(0,50%,75%);" data-1-center-center="background:hsl(180,50%,75%);">
+              slkdl;skl;
+            </div>
+            <div style="display: inline-block; width: 50%; height: 220px;" class="box" data-50-bottom-bottom="background:hsl(0,50%,75%);" data--50-top-top="background:hsl(180,50%,75%);">
+              slkdl;skl;
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Candidates -->
+      <div class="flex" style="font-size: 0;" id="candidates">
+        <div class="grid-item-image" style="background: url('img/Client.jpg');
+      background-size: cover; background-position: center center;position: relative;" data--100-bottom-top=" -webkit-filter:grayscale(100%);filter:grayscale(100%)"  data--100-bottom-bottom="-webkit-filter:grayscale(0%);filter:grayscale(0%)">
+          <div id="uploadcv" style="position: absolute;top: 50%;left: 50%;margin-left: -150px;  margin-top: -150px;width: 300px;  padding-top: 300px;border-radius: 999px;background-color: rgba(0, 0, 0, .6);">
+            <div style="position: absolute;top: 0;left: 0;bottom: 0; right: 0; ">
+              <div style="position: relative; width: 100%; height: 100%;display: flex; align-items: center; justify-content: center;">
+                <span style="color: #fff; font-size: 32px; font-weight: 700;">UPLOAD</span> <span style=" color: #fff; text-align: center; display: inine-block; border-radius: 999px;font-size: 32px; font-weight: 700; width: 64px; line-height: 64px; background: white; color: black; margin-left: 6px;">CV</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item-text">
+          <h2>Candidates</h2>
+          <p>We are the premier sports recruitment agency within the industry. Our large network of clients are looking for outstanding candidates, we are here to work closely with you and guide you on your recruitment journey.</p>
+          <p>You will receive a discreet and confidential service ensuring that your next career move is dealt with professionally.</p>
+          <p>Upload your CV or contact us to find out how we can help you achieve your career aspirations and find you the perfect job.</p>
+        </div>
+      </div>
+    </div>
+
+    <!--
+      * 6. FOOTER
+      *
+    -->
+
+    <div class="wrapper" id="footer">
+      <div class="full-height" style="background-image: url('img/Contact Us page.jpg'); background-attachment: scroll; background-position: center top; background-attachment: fixed;">
+        <div style="position: absolute; top: 0; right: 0; bottom: 0; left: 0;">
+          <div class="center-hero">
+            <h1>delineate</h1>
+            <p>&nbsp;design</p>
+          </div>
         </div>
 
-
-                    <div class="hintarrow">
-                      <a href="">
-                        <div>hint</div>
-                      </a>
-                    </div>
-
-
-      </div>
-    </div>
-  </div>
-</div>
-
-  <div style="    text-align: center;
-    padding: 5% 0;
-    padding: 60px 0;">
-    <h2 class="about-h2">About Us</h2>
-    <p style="    font-size: 28px;
-    line-height: 40px;
-    margin: 0;">SportsLink is a leading sports recruitment agency,<br>specialising in placing elite sports professionals<br>into career advancing job roles worldwide.</p>
-  </div>
-
-
-<style>
-
-  .submenuWrapper {
-  }
-
-  .submenu {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    white-space: nowrap;
-    font-size: 0;
-  }
-
-  .submenu li {
-    display: inline-block;
-  font-size: 16px;
-  font-weight: 700;
-  width: 25%;
-  text-align: center;
-  vertical-align: top;
-  background: black;
-  font-size: 16px;
-  line-height: 36px;
-  color: white;
-  text-transform: uppercase;
-  box-shadow: inset -2px 0 0px white;
-  }
-.submenu li:last-child {
-  box-shadow: none;
-}
-</style>
-
-<div class="submenuWrapper">
-  <ul class="submenu">
-    <li>Who we are</li>
-    <li style="background-color: #666;">What we do</li>
-    <li>Clients</li>
-    <li>Candidates</li>
-  </ul>
-</div>
-
-<style>
-.main-content .grid-item-text {
-  display: block;
-  width: 100%;
-  font-size: 16px;
-  padding: 11px;
-}
-
-@media (min-width: 950px) {
-  .main-content .grid-item-text {
-    width: 50%;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-.main-content .grid-item-image {
-    width: 100%;
-    padding-top: 440px;
-}
-
-@media (min-width: 950px) {
-  .main-content .grid-item-image {
-    width: 50%;
-    display: inline-block;
-    vertical-align: top;
-    padding-top: 440px;
-  }
-}
-</style>
-
-<div class="main-content">
-<div class="flex" style="font-size: 0;">
-  <div class="grid-item-text">
-    <h2>Who We Are</h2>
-    <p>We concentrate on building long term relationships with the leading clubs, brands, associations, venues and unions worldwide.</p>
-
-    <p>We act as the connection between carefully selected clients and outstanding candidates.</p>
-  </div>
-  <div class="grid-item-image" style="background: url('img/Candidate.jpg');background-size: cover;">
-  </div>
-
-</div>
-
-
-<div class="flex" style="font-size: 0;">
-
-  <div class="grid-item-image" style="background: url('img/PA-photo-3.jpg');
-    background-size: cover;">
-
-  </div>
-
-  <div class="grid-item-text">
-    <h2>What We Do</h2>
-    <p>We concentrate on building long term relationships with the leading clubs, brands, associations, venues and unions worldwide.</p>
-    <p>We act as the connection between carefully selected clients and outstanding candidates.</p>
-
-  </div>
-
-</div>
-
-
-
-<div class="flex" style="font-size: 0;">
-  <div class="grid-item-text">
-    <h2>Clients</h2>
-    <p>We offer flexible, temporary and permanent recruitment solutions that will deliver results.</p>
-
-<p>Our recruitment consultants offer in-depth industry knowledge and build strong, long term relationships with our clients.</p>
-
-<p>Taking the time to source the best talent in the industry, each candidate is screened and vetted assuring only the best quality of candidates are presented to you.</p>
-  </div>
-  <div class="grid-item-image" style="background: url('img/Client.jpg');
-    background-size: cover;">
-  </div>
-
-</div>
-
-
-
-<div class="flex" style="font-size: 0;">
-
-  <div class="grid-item-image" style="background: url('img/Client.jpg');
-    background-size: cover;">
-
-  </div>
-
-  <div class="grid-item-text">
-    <h2>Candidates</h2>
-    <p>We are the premier sports recruitment agency within the industry. Our large network of clients are looking for outstanding candidates, we are here to work closely with you and guide you on your recruitment journey.</p>
-
-<p>You will receive a discreet and confidential service ensuring that your next career move is dealt with professionally.</p>
-
-<p>Upload your CV or contact us to find out how we can help you achieve your career aspirations and find you the perfect job.</p>
-
-  </div>
-
-</div>
-</div>
-
-
-
-<div class="wrapper">
-  <div class="full-height" style="background-image: url('img/Contact Us page.jpg')">
-    <div style="position: absolute; top: 0; right: 0; bottom: 0; left: 0;">
-      <div class="center-hero">
-        <h1>delineate</h1>
-        <p>&nbsp;design</p>
       </div>
     </div>
 
-  </div>
-</div>
 
+  <!-- THE CLOSING  -->
+  </div><!-- /#skrollr-body -->
+
+  <!--
+  * JAVASCRIPTS
+  -->
   <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
   <script src="js/index.js"></script>
+  <script src="js/skrollr.min.js"></script>
+  <script type="text/javascript">
+  $(window).scroll(function() {
+  var scroll = $(window).scrollTop();
+
+   //>=, not <=
+  if (scroll >= 200) {
+      //clearHeader, not clearheader - caps H
+      $('.nav').delay(5000).addClass("nav-shadow");
+  }
+  else {
+    $('.nav').removeClass("nav-shadow");
+  }
+}); //missing );
+
+
+    skrollr.init({
+      forceHeight: false
+    });
+  </script>
 
 </body>
 </html>
