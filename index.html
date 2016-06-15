@@ -89,7 +89,7 @@
       * links to "who we are", "what we do", "clients", "candidates"
     -->
 
-    <div class="submenuWrapper">
+    <div class="submenuWrapper" data-1700="top:100%;" data-2200="top:0%;" data-3000="display:block;" data-3700="top:-100%;display:none;">
       <ul class="submenu">
         <li><a href="#whoweare">Who we are</a></li>
         <li><a href="#whatwedo">What we do</a></li>
@@ -202,10 +202,7 @@
   <script type="text/javascript">
   $(window).scroll(function() {
   var scroll = $(window).scrollTop();
-
-   //>=, not <=
   if (scroll >= 200) {
-      //clearHeader, not clearheader - caps H
       $('.nav').delay(5000).addClass("nav-shadow");
   }
   else {
