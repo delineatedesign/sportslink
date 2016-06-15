@@ -1,7 +1,23 @@
+$(function() {
+  var a = function() {
+    var b = $(window).scrollTop();
+    var d = $("#scroller-anchor").offset({scroll:false}).top;
+    var c=$("#scroller");
+    if (b>d) {
+      c.css({position:"fixed",top:"0px"})
+    } else {
+      if (b<=d) {
+        c.css({position:"relative",top:""})
+      }
+    }
+  };
+  $(window).scroll(a);a()
+});
+
 $(window).load(function() {
   setTimeout(function(){
   $('.overlay').fadeOut(2000);
-}, 5000);
+}, 0);
 });
 
 $('body').css({'width' : '100%','height': '100%'});

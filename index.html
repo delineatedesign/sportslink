@@ -89,7 +89,7 @@
       * links to "who we are", "what we do", "clients", "candidates"
     -->
 
-    <div class="submenuWrapper" data--top="position: fixed; z-index: 200;">
+    <div class="submenuWrapper">
       <ul class="submenu">
         <li><a href="#whoweare">Who we are</a></li>
         <li><a href="#whatwedo">What we do</a></li>
@@ -102,8 +102,8 @@
       * 5. MAIN CONTENT
       * "who we are", "what we do", "clients/upload CV", "candidates"
     -->
-
-    <div class="main-content">
+    <div id="scroller-anchor"></div>
+    <div class="main-content" id="scroller">
 
       <!-- Who We Are -->
       <div class="flex" style="font-size: 0;" id="whoweare">
@@ -112,14 +112,14 @@
           <p>We concentrate on building long term relationships with the <strong>leading clubs</strong>, <strong>brands</strong>, <strong>associations</strong>, <strong>venues</strong> and <strong>unions worldwide</strong>.</p>
           <p>We act as the connection between carefully selected <strong>clients</strong> and outstanding <strong>candidates</strong>.</p>
         </div>
-        <div data--100-bottom-top="-webkit-filter:grayscale(100%);filter:grayscale(100%)" data--100-bottom-bottom="-webkit-filter:grayscale(0%);filter:grayscale(0%)" class="grid-item-image" style="background: url('img/Candidate.jpg');background-size: cover;background-position: center center;">
+        <div data--200-bottom-top="-webkit-filter:grayscale(100%);filter:grayscale(100%)" data--200-bottom-bottom="-webkit-filter:grayscale(0%);filter:grayscale(0%)" class="grid-item-image" style="background: url('img/Candidate.jpg');background-size: cover;background-position: center center;">
         </div>
       </div>
 
       <!-- What We Do-->
       <div class="flex" style="font-size: 0;" id="whatwedo">
         <div class="grid-item-image" style="background: url('img/swim.jpg');
-        background-size: cover; background-position: center center;" data--100-bottom-top=" -webkit-filter:grayscale(100%);filter:grayscale(100%)" data--100-bottom-bottom="-webkit-filter:grayscale(0%);filter:grayscale(0%)">
+        background-size: cover; background-position: center center;" data--200-bottom-top=" -webkit-filter:grayscale(100%);filter:grayscale(100%)" data--200-bottom-bottom="-webkit-filter:grayscale(0%);filter:grayscale(0%)">
         </div>
         <div class="grid-item-text">
           <h2>What We Do</h2>
@@ -155,7 +155,7 @@
       <!-- Candidates -->
       <div class="flex" style="font-size: 0;" id="candidates">
         <div class="grid-item-image" style="background: url('img/Client.jpg');
-      background-size: cover; background-position: center center;position: relative;" data--100-bottom-top=" -webkit-filter:grayscale(100%);filter:grayscale(100%)"  data--100-bottom-bottom="-webkit-filter:grayscale(0%);filter:grayscale(0%)">
+      background-size: cover; background-position: center center;position: relative;" data--200-bottom-top=" -webkit-filter:grayscale(100%);filter:grayscale(100%)"  data--200-bottom-bottom="-webkit-filter:grayscale(0%);filter:grayscale(0%)">
           <div id="uploadcv" style="position: absolute;top: 50%;left: 50%;margin-left: -150px;  margin-top: -150px;width: 300px;  padding-top: 300px;border-radius: 999px;background-color: rgba(0, 0, 0, .6);">
             <div style="position: absolute;top: 0;left: 0;bottom: 0; right: 0; ">
               <div style="position: relative; width: 100%; height: 100%;display: flex; align-items: center; justify-content: center;">

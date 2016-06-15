@@ -16,7 +16,7 @@
 
 .nav-shadow {
     box-shadow: 0 6px 7px 0 rgba(0,0,0,.16);
-    padding: 0 2%;
+    padding: 0.5% 2%;
     background: rgba(0, 0, 0, .9);
 }
 
@@ -37,8 +37,8 @@
 
 .left a img {
   overflow: hidden;
-  width: 151.5px;
-  height: 33px;
+  width: 303px;
+  height: 66px;
   transition: .35s;
 }
 
