@@ -54,6 +54,7 @@ h1.header-h1 {
 
 h2.header-h2 {
   font-size: 20px;
+  font-weight: 700;
   text-align: center;
   text-transform: uppercase;
 }

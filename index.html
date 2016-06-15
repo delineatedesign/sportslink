@@ -15,7 +15,7 @@
   -->
   <link rel="stylesheet" href="css/styles.css">
 
-  <link href='https://fonts.googleapis.com/css?family=Raleway:300,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700,900' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -89,7 +89,7 @@
       * links to "who we are", "what we do", "clients", "candidates"
     -->
 
-    <div class="submenuWrapper" data-1700="top:100%;" data-2200="top:0%;" data-3000="display:block;" data-3700="top:-100%;display:none;">
+    <div class="submenuWrapper" data--top="position: fixed; z-index: 200;">
       <ul class="submenu">
         <li><a href="#whoweare">Who we are</a></li>
         <li><a href="#whatwedo">What we do</a></li>
@@ -136,17 +136,17 @@
           <p>Taking the time to source the best talent in the industry, each candidate is screened and vetted assuring only the best quality of candidates are presented to you.</p>
         </div>
         <div class="grid-item-text" style="padding: 0;">
-          <div style="height: 440px; font-size: 0;">
-            <div style="display: inline-block; width: 50%; height: 220px;" class="box" data-top-top="background:hsl(0,50%,75%);" data-bottom-bottom="background:hsl(180,50%,75%);">
+          <div style="height: 480px; font-size: 0;">
+            <div style="display: inline-block; vertical-align: top; width: 50%; height: 240px; background-color: black; padding: 22px; box-sizing: border-box;">
+              <img src="img/logo.jpg" alt="" width="180">
+            </div>
+            <div style="display: inline-block; vertical-align: top;width: 50%; height: 240px;" class="box" data-center-top="background:hsl(0,50%,75%);" data-center-bottom="background:hsl(180,50%,75%);">
               slkdl;skl;
             </div>
-            <div style="display: inline-block; width: 50%; height: 220px;" class="box" data-center-top="background:hsl(0,50%,75%);" data-center-bottom="background:hsl(180,50%,75%);">
+            <div style="display: inline-block;vertical-align: top; width: 50%; height: 240px;" id="bacon" class="box" data-center-center="background:hsl(0,50%,75%);" data-1-center-center="background:hsl(180,50%,75%);">
               slkdl;skl;
             </div>
-            <div style="display: inline-block; width: 50%; height: 220px;" id="bacon" class="box" data-center-center="background:hsl(0,50%,75%);" data-1-center-center="background:hsl(180,50%,75%);">
-              slkdl;skl;
-            </div>
-            <div style="display: inline-block; width: 50%; height: 220px;" class="box" data-50-bottom-bottom="background:hsl(0,50%,75%);" data--50-top-top="background:hsl(180,50%,75%);">
+            <div style="display: inline-block; vertical-align: top;width: 50%; height: 240px;" class="box" data-50-bottom-bottom="background:hsl(0,50%,75%);" data--50-top-top="background:hsl(180,50%,75%);">
               slkdl;skl;
             </div>
           </div>
@@ -182,8 +182,44 @@
       <div class="full-height" style="background-image: url('img/Contact Us page.jpg'); background-attachment: scroll; background-position: center top; background-attachment: fixed;">
         <div style="position: absolute; top: 0; right: 0; bottom: 0; left: 0;">
           <div class="center-hero">
-            <h1>delineate</h1>
-            <p>&nbsp;design</p>
+
+            <style>
+            .footer-form h2 {
+              font-size: 32px;
+              font-weight: 900;
+              text-align: center;
+              text-transform: uppercase;
+              margin-bottom: 24px;
+              color: #fff;
+            }
+
+            .footer-form p {
+              color: #fff;
+            }
+
+            </style>
+
+            <div class="footer-form">
+              <h2>UPLOAD CV</h2>
+              <form>
+                <p><label>Your Name (required)</label></p>
+                <p><input type="text" placeholder=""></p>
+                <p><label>Email (required)</label></p>
+                <p><input type="email" placeholder=""></p>
+              </form>
+            </div>
+
+            <div class="footer-form">
+              <h2>CONTACT US</h2>
+              <form>
+                <p><label>Your Name (required)</label></p>
+                <p><input type="text" placeholder=""></p>
+                <p><label>Email (required)</label></p>
+                <p><input type="email" placeholder=""></p>
+              </form>
+            </div>
+
+
           </div>
         </div>
 

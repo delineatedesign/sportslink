@@ -104,4 +104,4 @@ gulp.task("watch", function() {
 
 });
 
-gulp.task("default", ["browser-sync", "scripts", "watch"]);
+gulp.task("default", ["scripts", "browser-sync", "watch"]);
