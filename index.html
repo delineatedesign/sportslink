@@ -39,6 +39,7 @@
     <!--
       * 2. FULLSCREEN HEADING WITH BACKGROUND IMAGE
       * width 100% height 100%
+      * i need to tidy this up, too many unnecessary divs!
     -->
 
     <div class="wrapper  backstretch" data--200-bottom-top=" -webkit-filter:grayscale(100%);filter:grayscale(100%)"  data--200-bottom-bottom="-webkit-filter:grayscale(0%);filter:grayscale(0%)">
@@ -48,14 +49,13 @@
             <div class="center-heroWrapper">
               <div class="center-hero" >
                 <div style="position: relative;">
+
                   <div>
                     <h1 class="header-h1">We Connect</h1>
                     <h2 class="header-h2">Carefully selected clients<br>&amp; outstanding candidates</h2>
                   </div>
+
                 </div>
-              </div>
-              <div class="hintarrow">
-                <a href=""><div>hint</div></a>
               </div>
             </div>
           </div>
@@ -202,7 +202,7 @@
           <h2>Candidates</h2>
           <p>We are the premier sports recruitment agency within the industry. Our large network of clients are looking for outstanding candidates, we are here to work closely with you and guide you on your recruitment journey.</p>
           <p>You will receive a discreet and confidential service ensuring that your next career move is dealt with professionally.</p>
-          <p style="font-size: 14px;">Upload your CV or contact us to find out how we can help you achieve your career aspirations and find you the perfect job.</p>
+          <p style="font-size: 14px;"><a href="#">Upload your CV</a> or <a href="#">contact us</a> to find out how we can help you achieve your career aspirations and find you the perfect job.</p>
         </div>
       </div>
     </div>
@@ -213,12 +213,15 @@
     -->
 
     <div class="wrapper" id="footer" style="background:darkslategrey;">
-      <div class="full-height" style="background-image: url('img/sportslink_contact_us.jpg'); background-attachment: scroll; background-position: center top; background-attachment: fixed; background-size: cover;">
+      <div style="background-image: url('img/sportslink_contact_us.jpg'); background-attachment: scroll; background-position: center top; -webkit-background-size: cover; background-size: cover; padding-top: 280px; padding-bottom: 66px;">
         <div>
-          <div>
+
+            <h2 style="text-align: center; color: #fff; font-weight: 900; text-transform: uppecase;">UPLOAD CV <span style="font-weight: 300;">|</span> <span style="opacity: .2;">CONTACT US</span></h2>
+
+          <div style="display: flex; justify-content: center;">
 
             <style>
-            .footer-form{
+            .footer-form {
               text-align: center;
             }
             .footer-form h2 {
@@ -237,15 +240,22 @@
             .footer-form input,
             textarea {
               width: 100%;
+              border: 0;
+              -webkit-appearance: none;
+              appearance: none;
+              border-radius: 3px;
+              padding: 11px;
             }
 
             textarea {
-              min-height: 120px;
+              min-height: 110px;
             }
             </style>
 
+
+
             <div class="footer-form" style="width: 300px;">
-              <h2>UPLOAD CV</h2>
+
               <form>
                 <p><label>Your Name (required)</label></p>
                 <p><input type="text" placeholder=""></p>
@@ -262,20 +272,23 @@
                   display: inline-block;
                   border: 0;
                   border-radius: 88px;
+                  font-size: 12px;
                 }
                 </style>
-                <div style="display: flex; justify-content: center;">
-                  <p><input type="button" name="name" value="button"></p>
-                  <p><input type="submit" name="name" value="submit"></p>
-                </div>
 
                 <p><label>Message / Additional Information</label></p>
 
-                <p><textarea placeholder=""></textarea></p>
+                <p style="margin-bottom: 44px;"><textarea placeholder=""></textarea></p>
+
+                <div style="display: flex; justify-content: center;">
+                  <p style="margin: 0 6px;"><input type="button" name="name" value="FETCH CV"></p>
+                  <p style="margin: 0 6px;"><input type="submit" name="name" value="UPLOAD"></p>
+                </div>
 
               </form>
             </div>
 
+            <!--
             <div class="footer-form" style="width: 300px;">
               <h2>CONTACT US</h2>
 
@@ -292,10 +305,14 @@
 
               </form>
             </div>
+            -->
 
 
           </div>
         </div>
+
+
+        <img src="http://localhost:3000/img/sportslink_logo.png" style=" padding-top: 88px;width: 180px; display: block; margin: 0 auto;"/>
 
       </div>
     </div>
