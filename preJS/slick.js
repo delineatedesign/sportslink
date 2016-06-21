@@ -19,6 +19,10 @@ d.slice(e-c+1,e+c+2).addClass("slick-active").attr("aria-hidden","false")),0===a
 
 $(document).on('ready', function() {
       $(".regular").slick({
+        arrows: false,
+        adaptiveHeight: true,
+        centerPadding: '0px',
+        pauseOnHover: false,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
