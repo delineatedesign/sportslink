@@ -37,6 +37,7 @@
   box-shadow: none;
 }
 
+.submenu li a:hover,
 .submenu li a:active,
 .submenu li a:focus {
   background-color: #666;

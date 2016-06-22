@@ -73,6 +73,7 @@
   border-bottom: 2px solid transparent;
 }
 
+.right li a:hover,
 .right li a:active,
 .right li a:focus {
   border-bottom: 2px solid #fff;
