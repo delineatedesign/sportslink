@@ -128,6 +128,13 @@
             <div style="display: inline-block; vertical-align: top; width: 50%; height: 240px; background-color: black; padding: 22px; box-sizing: border-box;">
               <img src="img/sportslink_logo.png" alt="Sports Link words in white on a black background" width="180">
             </div>
+
+            <!--
+            *
+            * Client Image Silde 1
+            *
+            -->
+
             <div style="display: inline-block; vertical-align: top;width: 50%; height: 240px;" class="box">
               <section class="regular slider">
                   <div style="background: #000 url('img/sportslink_testimonial1.jpg') center center no-repeat;-webkit-background-size: cover; background-size: cover;"></div>
@@ -135,6 +142,13 @@
                   <div style="background: #444 url('img/sportslink_testimonial3.jpg') center center no-repeat;-webkit-background-size: cover; background-size: cover;"></div>
               </section>
             </div>
+
+            <!--
+            *
+            * Client Image Silde 2
+            *
+            -->
+
             <div style="display: inline-block;vertical-align: top; width: 50%; height: 240px;">
                 <section class="regular slider">
                     <div style="background: #000 url('img/sportslink_testimonial2.jpg') center center no-repeat;-webkit-background-size: cover; background-size: cover;"></div>
@@ -202,7 +216,7 @@
           <h2>Candidates</h2>
           <p>We are the premier sports recruitment agency within the industry. Our large network of clients are looking for outstanding candidates, we are here to work closely with you and guide you on your recruitment journey.</p>
           <p>You will receive a discreet and confidential service ensuring that your next career move is dealt with professionally.</p>
-          <p style="font-size: 14px;"><a href="#">Upload your CV</a> or <a href="#">contact us</a> to find out how we can help you achieve your career aspirations and find you the perfect job.</p>
+          <p style="font-size: 14px;"><a style="color: #545454; font-weight: 700;" class="link-uploadcv" href="#footer">Upload your CV</a> or <a style="color: #545454;font-weight: 700;" href="#footer" class="link-contactus">contact us</a> to find out how we can help you achieve your career aspirations and find you the perfect job.</p>
         </div>
       </div>
     </div>
@@ -213,16 +227,19 @@
     -->
 
     <div class="wrapper" id="footer" style="background:darkslategrey;">
-      <div style="background-image: url('img/sportslink_contact_us.jpg'); background-attachment: scroll; background-position: center top; -webkit-background-size: cover; background-size: cover; padding-top: 280px; padding-bottom: 66px;">
+      <div style="background-image: url('img/sportslink_contact_us.jpg'); background-attachment: scroll; background-position: center top; -webkit-background-size: cover; background-size: cover; padding-top: 280px; padding-bottom: 22px;">
         <div>
 
-            <h2 style="text-align: center; color: #fff; font-weight: 900; text-transform: uppecase;">UPLOAD CV <span style="font-weight: 300;">|</span> <span style="opacity: .2;">CONTACT US</span></h2>
+
 
           <div style="display: flex; justify-content: center;">
 
             <style>
             .footer-form {
               text-align: center;
+              margin: 0 33px;
+              -webkit-transition: opacity .35s;
+              transition: opacity .35s;
             }
             .footer-form h2 {
               font-size: 32px;
@@ -250,11 +267,12 @@
             textarea {
               min-height: 110px;
             }
+
             </style>
 
+            <div class="footer-form  footer-form-uploadcv" style="width: 300px;">
 
-
-            <div class="footer-form" style="width: 300px;">
+                <h2 style="text-align: center; color: #fff; font-weight: 900; text-transform: uppecase;">UPLOAD CV</h2>
 
               <form>
                 <p><label>Your Name (required)</label></p>
@@ -288,6 +306,41 @@
               </form>
             </div>
 
+            <div class="footer-form  footer-form-contactus" style="width: 300px;">
+
+                <h2 style="text-align: center; color: #fff; font-weight: 900; text-transform: uppecase;">CONTACT US</h2>
+
+              <form>
+                <p><label>Your Name (required)</label></p>
+                <p><input type="text" placeholder=""></p>
+                <p><label>Email (required)</label></p>
+                <p><input type="email" placeholder=""></p>
+                <style>
+                input[type="button"],
+                input[type="submit"] {
+                  height: 88px;
+                  width: 88px;
+                  background-color: #000;
+                  color: #fff;
+                  border: 0;
+                  display: inline-block;
+                  border: 0;
+                  border-radius: 88px;
+                  font-size: 12px;
+                }
+                </style>
+
+                <p><label>Message / Additional Information</label></p>
+
+                <p style="margin-bottom: 44px;"><textarea placeholder=""></textarea></p>
+
+                <div style="display: flex; justify-content: center;">
+                  <p style="margin: 0 6px;"><input type="button" name="name" value="SEND"></p>
+                </div>
+
+              </form>
+            </div>
+
             <!--
             <div class="footer-form" style="width: 300px;">
               <h2>CONTACT US</h2>
@@ -312,8 +365,10 @@
         </div>
 
 
+        <!--
         <img src="http://localhost:3000/img/sportslink_logo.png" style=" padding-top: 88px;width: 180px; display: block; margin: 0 auto;"/>
-
+        -->
+        <p style="color: #fff; text-align: center; font-size: 12px; padding-top: 66px;">Copyright © 2004–2016 SportsLink</p>
       </div>
     </div>
 
