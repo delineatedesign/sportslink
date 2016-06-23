@@ -83,7 +83,7 @@ body {
   display: none;
 }
 
-@media (min-width: 950px) {
+@media screen and (min-width: 950px) {
   .nav .right {
     display: block;
   }
@@ -166,7 +166,7 @@ h2.about-h2 {
   flex-direction: column;
 }
 
-@media (min-width: 950px) {
+@media screen and (min-width: 950px) {
   .main-content .flex{
     flex-direction: row;
   }

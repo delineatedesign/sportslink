@@ -82,7 +82,7 @@
     border-bottom: 2px solid #fff;
 }
 
-@media (min-width: 950px) {
+@media screen and (min-width: 950px) {
     .nav .right {
         display: block;
     }

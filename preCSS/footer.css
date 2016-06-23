@@ -26,7 +26,7 @@
     padding: 0 22px;
 }
 
-@media (min-width: 950px) {
+@media screen and (min-width: 768px) {
     .footer-form {
         display: inline-block;
         margin: 0 22px 55px;

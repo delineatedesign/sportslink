@@ -5,18 +5,37 @@
 
 .au-Wrapper {
   text-align: center;
-  padding: 60px 0;
+  padding: 33px 22px;
   background-color: #ddd;
 }
 
+@media screen and (min-width: 950px) {
+    .au-Wrapper {
+      padding: 66px 0;
+    }
+}
+
 .au-Heading {
-  font-size: 48px;
+  font-size: 32px;
   text-transform: uppercase;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
+}
+
+@media screen and (min-width: 950px) {
+    .au-Heading {
+      font-size: 48px;
+    }
 }
 
 .au-Paragraph {
-  font-size: 28px;
-  line-height: 40px;
+  font-size: 18px;
+  line-height: 32px;
   margin: 0;
+}
+
+@media screen and (min-width: 950px) {
+    .au-Paragraph {
+      font-size: 28px;
+      line-height: 40px;
+    }
 }
