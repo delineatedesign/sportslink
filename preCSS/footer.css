@@ -8,8 +8,14 @@
     background-attachment: fixed;
     background-position: center top;
     background-size: cover;
-    padding-top: 280px;
+    padding-top: 66px;
     padding-bottom: 22px;
+}
+
+@media screen and (min-width: 950px) {
+    .sl-Footer {
+        padding-top: 280px;
+    }
 }
 
 .sl-Footer_Forms {

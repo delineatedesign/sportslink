@@ -46,7 +46,7 @@
   display: block;
   width: 100%;
   font-size: 16px;
-  padding: 11px;
+  padding: 33px 11px;
 }
 
 @media screen and (min-width: 950px) {
@@ -54,6 +54,7 @@
     width: 50%;
     display: inline-block;
     vertical-align: top;
+    padding: 11px;
   }
 }
 
@@ -68,5 +69,15 @@
     display: inline-block;
     vertical-align: top;
     padding-top: 440px;
+  }
+}
+
+.grid-item-image-whoweare {
+    display: none;
+}
+
+@media screen and (min-width: 950px) {
+  .grid-item-image-whoweare {
+    display: inline-block;
   }
 }

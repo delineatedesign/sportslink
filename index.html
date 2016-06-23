@@ -26,7 +26,8 @@
     * 1. HEADER
     * sportslink logo and navigation
     -->
-    <div class="header nav">
+    <div class="header">
+    <div class="nav">
       <!-- header logo -->
       <div class="left">
         <a href=""><img src="img/sportslink_logo.png" alt="Sports Link words in white on a black background" /></a>
@@ -46,6 +47,8 @@
       </div>
 
       </div>
+
+    </div>
 
     </div>
 
@@ -118,13 +121,13 @@
           <p>We concentrate on building long term relationships with the <strong>leading clubs</strong>, <strong>brands</strong>, <strong>associations</strong>, <strong>venues</strong> and <strong>unions worldwide</strong>.</p>
           <p>We act as the connection between carefully selected <strong>clients</strong> and outstanding <strong>candidates</strong>.</p>
         </div>
-        <div class="grid-item-image" style="background: slateblue url('img/sportslink_candidate.jpg');background-size: cover;background-position: center center;" data--200-bottom-top=" -webkit-filter:grayscale(100%);filter:grayscale(100%)"  data--200-bottom-bottom="-webkit-filter:grayscale(0%);filter:grayscale(0%)">
+        <div class="grid-item-image  grid-item-image-whoweare" style="background: slateblue url('img/sportslink_candidate.jpg');-webkit-background-size: cover;background-size: cover;background-position: center center;" data--200-bottom-top=" -webkit-filter:grayscale(100%);filter:grayscale(100%)"  data--200-bottom-bottom="-webkit-filter:grayscale(0%);filter:grayscale(0%)">
         </div>
       </div>
 
       <!-- What We Do-->
       <div class="flex" style="font-size: 0;" id="whatwedo">
-        <div class="grid-item-image" style="background: slateblue url('img/sportslink_header2.jpg'); background-size: cover; background-position: center center;" data--200-bottom-top=" -webkit-filter:grayscale(100%);filter:grayscale(100%)"  data--200-bottom-bottom="-webkit-filter:grayscale(0%);filter:grayscale(0%)">
+        <div class="grid-item-image" style="background: slateblue url('img/sportslink_header2.jpg'); -webkit-background-size: cover;background-size: cover; background-position: center center;" data--200-bottom-top=" -webkit-filter:grayscale(100%);filter:grayscale(100%)"  data--200-bottom-bottom="-webkit-filter:grayscale(0%);filter:grayscale(0%)">
         </div>
         <div class="grid-item-text" data--0-bottom-top="-webkit-transform:translateY(25%);transform:translateY(25%); opacity: 0;"  data--0-bottom-bottom="-webkit-transform:translateY(0%); transform:translateY(0%); opacity: 1;">
           <h2>What We Do</h2>
@@ -187,7 +190,7 @@
             .sl-Slide-Testimonial {
                 position: relative;
                 height: 100%;
-                font-size: 16px;
+                font-size: 20px;
                 text-align: center;
                 padding: 22px;
                 display: -webkit-box;
@@ -204,17 +207,16 @@
                       justify-content: center;
             }
             </style>
-
             <div style="display: inline-block; vertical-align: top;width: 50%; height: 240px;">
                 <section class="regular slider">
                     <div>
-                        <div class="sl-Slide-Testimonial" style="background-color: indianred; color: white;">Testimonial 1</div>
+                        <div class="sl-Slide-Testimonial" style="background-color: #9CC; color: white;">QUOTE 1</div>
                     </div>
                     <div>
-                        <div class="sl-Slide-Testimonial" style="background-color: lightseagreen; color: white;">Testimonial 2</div>
+                        <div class="sl-Slide-Testimonial" style="background-color: #6CF; color: white;">"A fantastic opportunity<br>to connect with the best<br>in sports recruitment"</div>
                     </div>
                     <div>
-                        <div class="sl-Slide-Testimonial" style="background-color: slateblue; color: white;">Testimonial 3</div>
+                        <div class="sl-Slide-Testimonial" style="background-color: slateblue; color: white;">QUOTE 3</div>
                     </div>
               </section>
             </div>
@@ -224,7 +226,7 @@
       <!-- Candidates -->
       <div class="flex" style="font-size: 0;" id="candidates">
         <div class="grid-item-image" style="background: indianred url('img/sportslink_candidate.jpg');
-      background-size: cover; background-position: center center;position: relative;">
+      -webkit-background-size: cover;background-size: cover; background-position: center center;position: relative;">
           <div id="uploadcv" style="position: absolute;top: 50%;left: 50%;margin-left: -150px;  margin-top: -150px;width: 300px;  padding-top: 300px;border-radius: 999px;background-color: rgba(0, 0, 0, .6);">
             <div style="position: absolute;top: 0;left: 0;bottom: 0; right: 0; ">
               <div style="position: relative; width: 100%; height: 100%;display: flex; align-items: center; justify-content: center;">
@@ -292,6 +294,10 @@
   </div><!-- /#skrollr-body -->
 
   <!--
+  <div style="display: block; position: absolute; top: 0; left: 0; right: 0; bottom: 0; width: 100%; background-color: #000; color: #fff; display: flex; justify-content: center; align-items: center;">Something here</div>
+  -->
+
+  <!--
   * JAVASCRIPTS
   -->
   <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
@@ -313,10 +319,10 @@ $(".wrapper").backstretch([
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     if (scroll >= 200) {
-        $('.nav').addClass("nav-shadow");
+        $('.header').addClass("nav-shadow");
     }
     else {
-        $('.nav').removeClass("nav-shadow");
+        $('.header').removeClass("nav-shadow");
     }
 });
 skrollr.init({

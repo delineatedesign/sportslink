@@ -2,13 +2,16 @@
 * 1. HEADER and NAVIGATION
 */
 
-.nav {
+.header {
     position: fixed;
     right: 0;
     left: 0;
     z-index: 1;
-    padding: 1% 3%;
+    padding: 22px;
     transition: .35s;
+}
+
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,12 +46,12 @@
 
 .left a img {
     overflow: hidden;
-    width: 303px;
-    height: 66px;
+    width: 227.25px;
+    height: 49.5px;
     transition: .35s;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .left a img {
         width: 303px;
         height: 66px;
@@ -56,8 +59,15 @@
 }
 
 .nav-shadow .left a img {
-    width: 303px;
-    height: 66px;
+    width: 227.25px;
+    height: 49.5px;
+}
+
+@media screen and (min-width: 768px) {
+    .left a img {
+        width: 303px;
+        height: 66px;
+    }
 }
 
 .nav .right {
@@ -69,15 +79,17 @@
 }
 
 .sl-Nav {
-    display: inline-block;
-    vertical-align: middle;
-    opacity: 1;
+    display: none;
+    opacity: 0;
     transition: .35s all;
 }
 
-.sl-Nav-hidden {
-    display: none;
-    opacity: 0;
+@media screen and (min-width: 950px) {
+    .sl-Nav {
+        display: inline-block;
+        vertical-align: middle;
+        opacity: 1;
+    }
 }
 
 .right li a {
