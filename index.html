@@ -78,6 +78,7 @@
       * links to "who we are", "what we do", "clients", "candidates"
     -->
 
+    <!--
     <div class="submenuWrapper"  data-1700="top:100%;" data-2200="top:0%;" data-3000="display:block;" data-3700="top:-100%;display:none;">
       <ul class="submenu">
         <li><a href="#whoweare">Who we are</a></li>
@@ -86,6 +87,7 @@
         <li><a href="#candidates">Candidates</a></li>
       </ul>
     </div>
+    -->
 
     <!--
       * 5. MAIN CONTENT
@@ -125,8 +127,12 @@
         </div>
         <div class="grid-item-text" style="padding: 0;">
           <div style="height: 480px; font-size: 0;">
-            <div style="display: inline-block; vertical-align: top; width: 50%; height: 240px; background-color: black; padding: 22px; box-sizing: border-box;">
-              <img src="img/sportslink_logo.png" alt="Sports Link words in white on a black background" width="180">
+            <div style="position: relative;display: inline-block; vertical-align: top; width: 50%; height: 240px; background-color: black; padding: 22px; box-sizing: border-box;">
+              <img src="img/sportslink_logo.png" alt="Sports Link words in white on a black background" width="180" style="position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);">
             </div>
 
             <!--
@@ -226,49 +232,11 @@
       *
     -->
 
-    <div class="wrapper" id="footer" style="background:darkslategrey;">
-      <div style="background-image: url('img/sportslink_contact_us.jpg'); background-attachment: scroll; background-position: center top; -webkit-background-size: cover; background-size: cover; padding-top: 280px; padding-bottom: 22px;">
+    <div class="sl-FooterWrapper" id="footer">
+      <div class="sl-Footer">
         <div>
 
-
-
-          <div style="display: flex; justify-content: center;" >
-
-            <style>
-            .footer-form {
-              text-align: center;
-              margin: 0 33px;
-              -webkit-transition: opacity .35s;
-              transition: opacity .35s;
-            }
-            .footer-form h2 {
-              font-size: 32px;
-              font-weight: 900;
-              text-align: center;
-              text-transform: uppercase;
-              margin-bottom: 24px;
-              color: #fff;
-            }
-
-            .footer-form p {
-              color: #fff;
-            }
-
-            .footer-form input,
-            textarea {
-              width: 100%;
-              border: 0;
-              -webkit-appearance: none;
-              appearance: none;
-              border-radius: 3px;
-              padding: 11px;
-            }
-
-            textarea {
-              min-height: 110px;
-            }
-
-            </style>
+          <div class="sl-Footer_Forms">
 
             <div class="footer-form  footer-form-uploadcv" style="width: 300px;">
 
@@ -315,20 +283,8 @@
                 <p><input type="text" placeholder=""></p>
                 <p><label>Email (required)</label></p>
                 <p><input type="email" placeholder=""></p>
-                <style>
-                input[type="button"],
-                input[type="submit"] {
-                  height: 88px;
-                  width: 88px;
-                  background-color: #000;
-                  color: #fff;
-                  border: 0;
-                  display: inline-block;
-                  border: 0;
-                  border-radius: 88px;
-                  font-size: 12px;
-                }
-                </style>
+
+        
 
                 <p><label>Message / Additional Information</label></p>
 

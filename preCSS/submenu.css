@@ -2,43 +2,46 @@
 }
 
 .submenu {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  white-space: nowrap;
-  font-size: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    white-space: nowrap;
+    font-size: 0;
 }
 
 .submenu li {
-  display: inline-block;
-  width: 25%;
-  text-align: center;
-  vertical-align: top;
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    vertical-align: top;
 
 }
 .submenu li:last-child {
-  box-shadow: none;
+    box-shadow: none;
 }
 
 .submenu li a {
-  display: block;
-  font-weight: 700;
-  background: 000;
-  font-size: 14px;
-  line-height: 44px;
-  background-color: #000;
-  color: #fff;
-  text-transform: uppercase;
-  box-shadow: inset -2px 0 0px white;
-  text-decoration: none;
+    display: block;
+    font-weight: 700;
+    background: 000;
+    font-size: 14px;
+    line-height: 44px;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: inset -2px 0 0px white;
+    text-decoration: none;
 }
 
 .submenu li:last-child a {
-  box-shadow: none;
+    box-shadow: none;
 }
 
-.submenu li a:hover,
+.submenu li a:hover {
+    background-color: slategrey;
+}
+
 .submenu li a:active,
 .submenu li a:focus {
-  background-color: #666;
+    background-color: #666;
 }

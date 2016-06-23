@@ -3,15 +3,15 @@
 */
 
 .nav {
-  position: fixed;
-  right: 0;
-  left: 0;
-  z-index: 1;
-  padding: 1% 3%;
-  transition: .35s;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    padding: 1% 3%;
+    transition: .35s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav-shadow {
@@ -21,76 +21,79 @@
 }
 
 .nav .left {
-  float: left;
+    float: left;
 }
 
 .left a {
-  float: left;
-  font-size: 18px;
-  display: block;
-  position: relative;
-  top: 0;
-  padding: 0;
-  height: auto;
-  z-index: 3;
+    float: left;
+    font-size: 18px;
+    display: block;
+    position: relative;
+    top: 0;
+    padding: 0;
+    height: auto;
+    z-index: 3;
 }
 
 .left a img {
-  overflow: hidden;
-  width: 303px;
-  height: 66px;
-  transition: .35s;
+    overflow: hidden;
+    width: 303px;
+    height: 66px;
+    transition: .35s;
 }
 
 @media (min-width: 768px) {
-  .left a img {
-    width: 303px;
-    height: 66px;
-  }
+    .left a img {
+        width: 303px;
+        height: 66px;
+    }
 }
 
 .nav-shadow .left a img {
-  width: 303px;
-  height: 66px;
+    width: 303px;
+    height: 66px;
 }
 
 .nav .right {
-  float: right;
-  color: white;
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 700;
-  display: none;
+    float: right;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    display: none;
 }
 
 .right a {
-  color: #fff;
-  text-decoration: none;
-  display: block;
-  margin-left: 11px;
-  padding-bottom: 8px;
-  /*line-height: 69px;*/
-  border-bottom: 2px solid transparent;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-left: 11px;
+    padding-bottom: 8px;
+    /*line-height: 69px;*/
+    border-bottom: 2px solid transparent;
 }
 
-.right li a:hover,
+.right li a:hover {
+    border-bottom: 2px solid slategrey;
+}
+
 .right li a:active,
 .right li a:focus {
-  border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #fff;
 }
 
 @media (min-width: 950px) {
-  .nav .right {
-    display: block;
-  }
+    .nav .right {
+        display: block;
+    }
 
-  .right ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
+    .right ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
 
-  .right li {
-    display: inline-block;
-  }
+    .right li {
+        display: inline-block;
+    }
 }
