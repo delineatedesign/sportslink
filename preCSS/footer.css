@@ -42,6 +42,7 @@
     text-transform: uppercase;
     margin-bottom: 24px;
     color: #fff;
+    text-shadow: 1px 0 #bbb;
 }
 
 .footer-form p {
