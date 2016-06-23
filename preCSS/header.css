@@ -14,6 +14,12 @@
     align-items: center;
 }
 
+.right:after {
+    content:" ";
+    display:block;
+    clear:both;
+}
+
 .nav-shadow {
     box-shadow: 0 6px 7px 0 rgba(0,0,0,.16);
     padding: 0.5% 2%;
@@ -60,10 +66,21 @@
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 700;
-    display: none;
 }
 
-.right a {
+.sl-Nav {
+    display: inline-block;
+    vertical-align: middle;
+    opacity: 1;
+    transition: .35s all;
+}
+
+.sl-Nav-hidden {
+    display: none;
+    opacity: 0;
+}
+
+.right li a {
     color: #fff;
     text-decoration: none;
     display: block;
@@ -83,10 +100,6 @@
 }
 
 @media screen and (min-width: 950px) {
-    .nav .right {
-        display: block;
-    }
-
     .right ul {
         margin: 0;
         padding: 0;

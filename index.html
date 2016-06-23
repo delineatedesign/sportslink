@@ -33,15 +33,23 @@
       </div>
       <!-- header navigation -->
       <div class="right">
-        <ul>
+        <ul class="sl-Nav">
           <li><a href="#whoweare">Who We Are</a></li>
           <li><a href="#whatwedo">What We Do</a></li>
           <li><a href="#clients">Clients</a></li>
           <li><a href="#candidates">Candidates</a></li>
           <li><a href="#footer">Upload CV</a></li>
-        </ul>
+      </ul>
+
+      <div class="navicon">
+          <a class="nav-toggle" href="#"><span></span></a>
       </div>
+
+      </div>
+
     </div>
+
+
 
     <!--
       * 2. FULLSCREEN HEADING WITH BACKGROUND IMAGE
@@ -75,7 +83,7 @@
       * lead paragraph
     -->
 
-    <div id="aboutus" class="au-Wrapper">
+    <div id="aboutus" class="au-Wrapper"  data--0-bottom-top="opacity: 0;"  data--0-bottom-bottom="opacity: 1;">
       <h2 class="au-Heading">About Us</h2>
       <p class="au-Paragraph">SportsLink is a leading sports recruitment agency,<br>specialising in placing elite sports professionals<br>into career advancing job roles worldwide.</p>
     </div>
@@ -105,7 +113,7 @@
 
       <!-- Who We Are -->
       <div class="flex" style="font-size: 0;" id="whoweare">
-        <div class="grid-item-text">
+        <div class="grid-item-text" data--0-bottom-top="-webkit-transform:translateY(25%);transform:translateY(25%); opacity: 0;"  data--0-bottom-bottom="-webkit-transform:translateY(0%); transform:translateY(0%); opacity: 1;">
           <h2>Who We Are</h2>
           <p>We concentrate on building long term relationships with the <strong>leading clubs</strong>, <strong>brands</strong>, <strong>associations</strong>, <strong>venues</strong> and <strong>unions worldwide</strong>.</p>
           <p>We act as the connection between carefully selected <strong>clients</strong> and outstanding <strong>candidates</strong>.</p>
@@ -118,7 +126,7 @@
       <div class="flex" style="font-size: 0;" id="whatwedo">
         <div class="grid-item-image" style="background: slateblue url('img/sportslink_header2.jpg'); background-size: cover; background-position: center center;" data--200-bottom-top=" -webkit-filter:grayscale(100%);filter:grayscale(100%)"  data--200-bottom-bottom="-webkit-filter:grayscale(0%);filter:grayscale(0%)">
         </div>
-        <div class="grid-item-text">
+        <div class="grid-item-text" data--0-bottom-top="-webkit-transform:translateY(25%);transform:translateY(25%); opacity: 0;"  data--0-bottom-bottom="-webkit-transform:translateY(0%); transform:translateY(0%); opacity: 1;">
           <h2>What We Do</h2>
           <p>We concentrate on building long term relationships with the leading clubs, brands, associations, venues and unions worldwide.</p>
           <p>We act as the connection between carefully selected clients and outstanding candidates.</p>
@@ -126,7 +134,7 @@
       </div>
       <!-- Clients -->
       <div class="flex" style="font-size: 0;" id="clients">
-        <div class="grid-item-text">
+        <div class="grid-item-text" data--0-bottom-top="-webkit-transform:translateY(25%);transform:translateY(25%); opacity: 0;"  data--0-bottom-bottom="-webkit-transform:translateY(0%); transform:translateY(0%); opacity: 1;">
           <h2>Clients</h2>
           <p>We offer flexible, temporary and permanent recruitment solutions that will deliver results.</p>
           <p>Our recruitment consultants offer in-depth industry knowledge and build strong, long term relationships with our clients.</p>
@@ -216,7 +224,7 @@
       <!-- Candidates -->
       <div class="flex" style="font-size: 0;" id="candidates">
         <div class="grid-item-image" style="background: indianred url('img/sportslink_candidate.jpg');
-      background-size: cover; background-position: center center;position: relative;" data--200-bottom-top=" -webkit-filter:grayscale(100%);filter:grayscale(100%)"  data--200-bottom-bottom="-webkit-filter:grayscale(0%);filter:grayscale(0%)">
+      background-size: cover; background-position: center center;position: relative;">
           <div id="uploadcv" style="position: absolute;top: 50%;left: 50%;margin-left: -150px;  margin-top: -150px;width: 300px;  padding-top: 300px;border-radius: 999px;background-color: rgba(0, 0, 0, .6);">
             <div style="position: absolute;top: 0;left: 0;bottom: 0; right: 0; ">
               <div style="position: relative; width: 100%; height: 100%;display: flex; align-items: center; justify-content: center;">
@@ -225,7 +233,7 @@
             </div>
           </div>
         </div>
-        <div class="grid-item-text">
+        <div class="grid-item-text"  data--0-bottom-top="-webkit-transform:translateY(25%);transform:translateY(25%); opacity: 0;"  data--0-bottom-bottom="-webkit-transform:translateY(0%); transform:translateY(0%); opacity: 1;">
           <h2>Candidates</h2>
           <p>We are the premier sports recruitment agency within the industry. Our large network of clients are looking for outstanding candidates, we are here to work closely with you and guide you on your recruitment journey.</p>
           <p>You will receive a discreet and confidential service ensuring that your next career move is dealt with professionally.</p>
@@ -305,7 +313,7 @@ $(".wrapper").backstretch([
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     if (scroll >= 200) {
-        $('.nav').delay(5000).addClass("nav-shadow");
+        $('.nav').addClass("nav-shadow");
     }
     else {
         $('.nav').removeClass("nav-shadow");
