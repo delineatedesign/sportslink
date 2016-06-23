@@ -233,99 +233,43 @@
     -->
 
     <div class="sl-FooterWrapper" id="footer">
-      <div class="sl-Footer">
-        <div>
+        <div class="sl-Footer">
+            <div>
+                <div class="sl-Footer_Forms">
+                    <div class="footer-form  footer-form-uploadcv">
+                        <h2 style="text-align: center; color: #fff; font-weight: 900; text-transform: uppecase;">UPLOAD CV</h2>
+                        <form>
+                            <p><label>Your Name (required)</label></p>
+                            <p><input type="text" placeholder=""></p>
+                            <p><label>Email (required)</label></p>
+                            <p><input type="email" placeholder=""></p>
+                            <p><label>Message / Additional Information</label></p>
+                            <p style="margin-bottom: 44px;"><textarea placeholder=""></textarea></p>
+                            <div class="footer-form-buttons">
+                                <p style="margin: 0 6px;"><input type="button" name="name" value="FETCH CV"></p>
+                                <p style="margin: 0 6px;"><input type="submit" name="name" value="UPLOAD"></p>
+                            </div>
+                        </form>
+                    </div>
 
-          <div class="sl-Footer_Forms">
-
-            <div class="footer-form  footer-form-uploadcv" style="width: 300px;">
-
-                <h2 style="text-align: center; color: #fff; font-weight: 900; text-transform: uppecase;">UPLOAD CV</h2>
-
-              <form>
-                <p><label>Your Name (required)</label></p>
-                <p><input type="text" placeholder=""></p>
-                <p><label>Email (required)</label></p>
-                <p><input type="email" placeholder=""></p>
-                <style>
-                input[type="button"],
-                input[type="submit"] {
-                  height: 88px;
-                  width: 88px;
-                  background-color: #000;
-                  color: #fff;
-                  border: 0;
-                  display: inline-block;
-                  border: 0;
-                  border-radius: 88px;
-                  font-size: 12px;
-                }
-                </style>
-
-                <p><label>Message / Additional Information</label></p>
-
-                <p style="margin-bottom: 44px;"><textarea placeholder=""></textarea></p>
-
-                <div style="display: flex; justify-content: center;">
-                  <p style="margin: 0 6px;"><input type="button" name="name" value="FETCH CV"></p>
-                  <p style="margin: 0 6px;"><input type="submit" name="name" value="UPLOAD"></p>
+                    <div class="footer-form  footer-form-contactus">
+                        <h2 style="text-align: center; color: #fff; font-weight: 900; text-transform: uppecase;">CONTACT US</h2>
+                        <form>
+                            <p><label>Your Name (required)</label></p>
+                            <p><input type="text" placeholder=""></p>
+                            <p><label>Email (required)</label></p>
+                            <p><input type="email" placeholder=""></p>
+                            <p><label>Message / Additional Information</label></p>
+                            <p style="margin-bottom: 44px;"><textarea placeholder=""></textarea></p>
+                            <div class="footer-form-buttons">
+                                <p style="margin: 0 6px;"><input type="button" name="name" value="SEND"></p>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-
-              </form>
             </div>
-
-            <div class="footer-form  footer-form-contactus" style="width: 300px;" >
-
-                <h2 style="text-align: center; color: #fff; font-weight: 900; text-transform: uppecase;">CONTACT US</h2>
-
-              <form>
-                <p><label>Your Name (required)</label></p>
-                <p><input type="text" placeholder=""></p>
-                <p><label>Email (required)</label></p>
-                <p><input type="email" placeholder=""></p>
-
-        
-
-                <p><label>Message / Additional Information</label></p>
-
-                <p style="margin-bottom: 44px;"><textarea placeholder=""></textarea></p>
-
-                <div style="display: flex; justify-content: center;">
-                  <p style="margin: 0 6px;"><input type="button" name="name" value="SEND"></p>
-                </div>
-
-              </form>
-            </div>
-
-            <!--
-            <div class="footer-form" style="width: 300px;">
-              <h2>CONTACT US</h2>
-
-              <p>Simply fill out the required fields, press send, and we'll do out best to reply as soon as possible.</p>
-              <form>
-                <p><label>Your Name (required)</label></p>
-                <p><input type="text" placeholder=""></p>
-                <p><label>Email (required)</label></p>
-                <p><input type="email" placeholder=""></p>
-
-                <p><label>Message / Additional Information</label></p>
-
-                <p><textarea placeholder=""></textarea></p>
-
-              </form>
-            </div>
-            -->
-
-
-          </div>
+            <p style="color: #fff; text-align: center; font-size: 12px; padding-top: 66px;">Copyright © 2016 SportsLink</p>
         </div>
-
-
-        <!--
-        <img src="http://localhost:3000/img/sportslink_logo.png" style=" padding-top: 88px;width: 180px; display: block; margin: 0 auto;"/>
-        -->
-        <p style="color: #fff; text-align: center; font-size: 12px; padding-top: 66px;">Copyright © 2016 SportsLink</p>
-      </div>
     </div>
 
 
@@ -345,29 +289,25 @@
 * Full screen header slideshow images - if adding more, don't forget the comma
 -->
 
-  <script>
-  $(".wrapper").backstretch([
-      "img/sportslink_header1.jpg",
-      "img/sportslink_header2.jpg"
+<script>
+$(".wrapper").backstretch([
+    "img/sportslink_header1.jpg",
+    "img/sportslink_header2.jpg"
 ], {duration: 2000, fade: 2000});
-  </script>
 
-  <script type="text/javascript">
-  $(window).scroll(function() {
-  var scroll = $(window).scrollTop();
-  if (scroll >= 200) {
-      $('.nav').delay(5000).addClass("nav-shadow");
-  }
-  else {
-    $('.nav').removeClass("nav-shadow");
-  }
-}); //missing );
-
-
-    skrollr.init({
-      forceHeight: false
-    });
-  </script>
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    if (scroll >= 200) {
+        $('.nav').delay(5000).addClass("nav-shadow");
+    }
+    else {
+        $('.nav').removeClass("nav-shadow");
+    }
+});
+skrollr.init({
+    forceHeight: false
+});
+</script>
 
 </body>
 </html>
