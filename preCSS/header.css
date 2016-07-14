@@ -49,10 +49,7 @@
     width: 227.25px;
     height: 49.5px;
     transition: .35s;
-}
-
-@media screen and (min-width: 768px) {
-    .left a img {
+    @media screen and (min-width: 768px) {
         width: 303px;
         height: 66px;
     }
@@ -61,10 +58,7 @@
 .nav-shadow .left a img {
     width: 227.25px;
     height: 49.5px;
-}
-
-@media screen and (min-width: 768px) {
-    .left a img {
+    @media screen and (min-width: 768px) {
         width: 303px;
         height: 66px;
     }
@@ -82,10 +76,7 @@
     display: none;
     opacity: 0;
     transition: .35s all;
-}
-
-@media screen and (min-width: 950px) {
-    .sl-Nav {
+    @media screen and (min-width: 950px) {
         display: inline-block;
         vertical-align: middle;
         opacity: 1;
@@ -100,11 +91,11 @@
     padding-bottom: 8px;
     /*line-height: 69px;*/
     border-bottom: 2px solid transparent;
+    &:hover {
+        border-bottom: 2px solid slategrey;
+    }
 }
 
-.right li a:hover {
-    border-bottom: 2px solid slategrey;
-}
 
 .right li a:active,
 .right li a:focus {

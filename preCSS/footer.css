@@ -10,10 +10,7 @@
     background-size: cover;
     padding-top: 66px;
     padding-bottom: 22px;
-}
-
-@media screen and (min-width: 950px) {
-    .sl-Footer {
+    @media screen and (min-width: 950px) {
         padding-top: 280px;
     }
 }
@@ -30,10 +27,7 @@
     width: 100%;
     margin: 0 auto 55px;
     padding: 0 22px;
-}
-
-@media screen and (min-width: 768px) {
-    .footer-form {
+    @media screen and (min-width: 768px) {
         display: inline-block;
         margin: 0 22px 55px;
         padding: 0;
