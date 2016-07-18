@@ -40,6 +40,7 @@
                         <li class="sl-HeaderNavItem"><a href="#whatwedo" class="sl-HeaderNavItem_Link">What We Do</a></li>
                         <li class="sl-HeaderNavItem"><a href="#clients" class="sl-HeaderNavItem_Link">Clients</a></li>
                         <li class="sl-HeaderNavItem"><a href="#candidates" class="sl-HeaderNavItem_Link">Candidates</a></li>
+                        <li class="sl-HeaderNavItem"><a href="#candidates" class="sl-HeaderNavItem_Link">Candidates</a></li>
                         <li class="sl-HeaderNavItem"><a href="#footer" class="sl-HeaderNavItem_Link">Upload CV</a></li>
                         <li class="sl-HeaderNavItem"><a href="#contactus" class="sl-HeaderNavItem_Link">Contact Us</a></li>
                     </ul>
@@ -127,8 +128,8 @@
 
 
       <div class="uploadcv-mobile">
-          <div class="grid-item-image"  id="candidates" style="background: indianred url('img/sportslink_CV.jpg');
-        -webkit-background-size: cover;background-size: cover; background-position: center center;position: relative;"  data--200-bottom-top=" -webkit-filter:grayscale(100%);filter:grayscale(100%)"  data--200-bottom-bottom="-webkit-filter:grayscale(0%);filter:grayscale(0%)">
+          <div class="grid-item-image" style="background: indianred url('img/sportslink_CV.jpg');
+        -webkit-background-size: cover;background-size: cover; background-position: center center;position: relative;">
             <a href="#footer" id="uploadcv" style="position: absolute;top: 50%;left: 50%;margin-left: -150px;  margin-top: -150px;width: 300px;  padding-top: 300px;border-radius: 999px;background-color: rgba(0, 0, 0, .6);">
 
               <div style="position: absolute;top: 0;left: 0;bottom: 0; right: 0; ">
@@ -181,7 +182,7 @@
             <div style="width: 100%; height: 480px;">
                 <section class="regular slider">
                     <div>
-                        <div class="sl-Slide-Testimonial" style="background-color: #000; color: white; position: relative;">
+                        <div id="basic-waypoint" class="sl-Slide-Testimonial" style="background-color: #000; color: white; position: relative;">
                         <img src="img/sportslink_logo.png" alt="Sports Link words in white on a black background"  style="position: absolute;top: 50%;left: 50%;-webkit-transform: translate(-50%, -50%);transform: translate(-50%, -50%);">
                     </div>
                     </div>
@@ -189,7 +190,7 @@
                         <div class="sl-Slide-Testimonial" style="background-color: slategrey; color: white; font-size: 28px;">&ldquo;A fantastic opportunity<br>to connect with the best<br>in sports recruitment&rdquo;</div>
                     </div>
                     <div>
-                        <div class="sl-Slide-Testimonial" style="background: #000 url('img/sportslink_testimonial2.jpg') center center no-repeat;-webkit-background-size: cover; background-size: cover;">
+                        <div class="sl-Slide-Testimonial" style="background: #000 url('img/sportslink_testimonial2.jpg') center center no-repeat; -webkit-background-size: cover; background-size: cover;">
 
                         </div>
                     </div>
@@ -273,6 +274,8 @@
   -->
   <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
   <script src="js/sportslink.js"></script>
+  <script src="vendor/noframework.waypoints.min.js"></script>
+
   <!--[if lt IE 9]>
   <script type="text/javascript" src="vendor/skrollr.ie.min.js"></script>
   <![endif]-->
@@ -298,11 +301,20 @@ $(window).scroll(function() {
     }
 });
 
+/* jQuery */
 /*
-skrollr.init({
-    forceHeight: false
+jQuery(window).load(function($) {
+  var s = skrollr.init();
 });
 */
+
+/*var waypoint = new Waypoint({
+  element: document.getElementById('basic-waypoint'),
+  handler: function() {
+    notify('Basic waypoint triggered')
+  }
+})*/
+
 </script>
 
 </body>
