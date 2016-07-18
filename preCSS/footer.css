@@ -20,12 +20,12 @@
 .footer-form {
     display: block;
     text-align: center;
-    margin: 0 33px;
     transition: opacity .35s;
     padding: 0 44px;
     @media screen and (min-width: 768px) {
         display: inline-block;
         vertical-align: top;
+        margin: 0 33px;
     }
 }
 
@@ -147,4 +147,10 @@ input[type="submit"],
     clear: both;
     font-size: 9pt;
     background: #ccc !important;
+}
+
+.emf-upload-progress .emf-upload-control {
+    float: right;
+    margin: 2px;
+    color: #404040 !important;
 }
