@@ -154,3 +154,10 @@ input[type="submit"],
     margin: 2px;
     color: #404040 !important;
 }
+
+
+.contactus-footer-heading,
+.uploadcv-footer-heading {
+    transition: all .35s ease;
+    padding: 0 11px;
+}

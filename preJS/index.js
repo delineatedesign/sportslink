@@ -35,6 +35,25 @@ $(document).ready(function() {
       });
     });
 
+    if($('#element_0_0').is(':checked')) {
+        $('.uploadcv-footer-heading').css('opacity','.25');
+        $('.contactus-footer-heading').css('opacity','1');
+     }
+
+$('#element_0_0').click(function() {
+       if($('#element_0_0').is(':checked')) {
+           $('.uploadcv-footer-heading').css('opacity','.25');
+           $('.contactus-footer-heading').css('opacity','1');
+        }
+    });
+
+$('#element_0_1').click(function() {
+        if($('#element_0_1').is(':checked')) {
+            $('.uploadcv-footer-heading').css('opacity','1');
+            $('.contactus-footer-heading').css('opacity','.25');
+         }
+});
+
 /*
     $('.link-uploadcv').on('click', function(e) {
         $('.footer-form-contactus').css('opacity','.25');
