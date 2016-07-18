@@ -35,11 +35,15 @@
   transform: translate(-50%,-50%);
   color: #FFF;
   position: absolute;
-  width: 500px;
-  padding-top: 500px;
+  width: 90%;
+  padding-top: 90%;
   background: rgba(0, 0, 0, .6);
-  border-radius: 999px;
-
+        border-radius: 999px;
+  @media (min-width: 520px) {
+      width: 500px;
+      padding-top: 500px;
+      background: rgba(0, 0, 0, .6);
+  }
 }
 
 .center-hero {
@@ -55,16 +59,21 @@
 
 
 h1.header-h1 {
-  font-size: 48px;
+  font-size: 38px;
   text-align: center;
   text-transform: uppercase;
+  @media (min-width: 950px) {
+      font-size: 48px;
+  }
 }
 
 h2.header-h2 {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 24px;
+  font-weight: 400;
   text-align: center;
-  text-transform: uppercase;
+  @media (min-width: 950px) {
+      font-size: 32px;
+  }
 }
 
 

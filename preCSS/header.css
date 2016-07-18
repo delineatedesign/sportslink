@@ -2,92 +2,101 @@
 * 1. HEADER and NAVIGATION
 */
 
-.header {
+.sl-SportsLinkHeaderWrapper {
     position: fixed;
+    top: 0;
     right: 0;
     left: 0;
-    z-index: 1;
+    z-index: 20;
     padding: 22px;
-    transition: .35s;
+    background: color(#000 a(0%));
+    transition: all .35s;
 }
 
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.right:after {
-    content:" ";
-    display:block;
-    clear:both;
-}
-
+/**
+*  add background color to header on scroll
+*/
 .nav-shadow {
     box-shadow: 0 6px 7px 0 rgba(0,0,0,.16);
-    padding: 0.5% 2%;
-    background: rgba(0, 0, 0, .9);
+    padding: 11px;
+    background: #000;
+    background: color(#000 a(90%));
 }
 
-.nav .left {
-    float: left;
+[data-mobile-nav="visible"] .sl-SportsLinkHeaderWrapper {
+    height: 100%;
+    background: color(#000 a(90%));
 }
 
-.left a {
-    float: left;
-    font-size: 18px;
-    display: block;
-    position: relative;
-    top: 0;
-    padding: 0;
-    height: auto;
-    z-index: 3;
+.sl-SportsLinkHeader {
+    @media (min-width: 950px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
-.left a img {
-    overflow: hidden;
-    width: 227.25px;
-    height: 49.5px;
+.sl-HeaderLogo {
+    display: inline-block;
+    width: 202px;
+    height: 44px;
+    background-image: url("../img/sportslink_logo.png");
+    background-repeat: no-repeat;
+    background-size: 202px 44px;
+    text-indent: -9999px;
     transition: .35s;
     @media screen and (min-width: 768px) {
         width: 303px;
         height: 66px;
+        background-size: 303px 66px;
     }
 }
 
-.nav-shadow .left a img {
-    width: 227.25px;
-    height: 49.5px;
-    @media screen and (min-width: 768px) {
-        width: 303px;
-        height: 66px;
-    }
-}
-
-.nav .right {
-    float: right;
+.sl-HeaderNavWrapper {
     color: white;
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 700;
-}
-
-.sl-Nav {
-    display: none;
-    opacity: 0;
-    transition: .35s all;
-    @media screen and (min-width: 950px) {
-        display: inline-block;
-        vertical-align: middle;
-        opacity: 1;
+    padding: 11px 0;
+    @media (min-width: 950px) {
+        float: right;
     }
 }
 
-.right li a {
+[data-mobile-nav="hidden"] .sl-HeaderNavWrapper {
+    display: none;
+    @media (min-width: 950px) {
+        display: block;
+    }
+}
+
+[data-mobile-nav="visible"] .sl-HeaderNavWrapper {
+    display: block;
+}
+
+.sl-HeaderNav {
+    display: inline-block;
+    vertical-align: middle;
+    opacity: 1;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sl-HeaderNavItem {
+    margin-top: 22px;
+    @media (min-width: 950px) {
+        display: inline-block;
+        margin-top: 0;
+        margin-left: 11px;
+    }
+}
+
+.sl-HeaderNavItem_Link {
     color: #fff;
     text-decoration: none;
     display: block;
-    margin-left: 11px;
     padding-bottom: 8px;
     /*line-height: 69px;*/
     border-bottom: 2px solid transparent;
@@ -97,19 +106,7 @@
 }
 
 
-.right li a:active,
-.right li a:focus {
+.sl-HeaderNavItem_Link:active,
+.sl-HeaderNavItem_Link:focus {
     border-bottom: 2px solid #fff;
-}
-
-@media screen and (min-width: 950px) {
-    .right ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
-
-    .right li {
-        display: inline-block;
-    }
 }

@@ -1,83 +1,72 @@
 .main-content {
     background-color: #fff;
+    color: #666;
 }
 
-.main-content .flex{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-@media screen and (min-width: 950px) {
-  .main-content .flex{
-    flex-direction: row;
-  }
-}
-
-.main-content {
-  color: #666;
+.main-content .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @media screen and (min-width: 950px) {
+        flex-direction: row;
+    }
 }
 
 .main-content h2 {
-  font-size: 32px;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 22px;
-  color: #666;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    color: #666;
+    @media screen and (min-width: 950px) {
+        font-size: 32px;
+    }
 }
 
 .main-content p {
-  font-size: 14px;
-  font-size: 18px;
-  text-align: center;
-  margin: 0 auto;
-  max-width: 430px;
-  margin-bottom: 11px;
-  color: #333;
-  line-height: 1.5;
-}
-
-.main-content p:last-child {
-  margin-bottom: 0;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 430px;
+    margin-bottom: 11px;
+    color: #333;
+    line-height: 1.5;
+    @media screen and (min-width: 950px) {
+        font-size: 18px;
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .main-content .grid-item-text {
-  display: block;
-  width: 100%;
-  font-size: 16px;
-  padding: 33px 11px;
-}
-
-@media screen and (min-width: 950px) {
-  .main-content .grid-item-text {
-    width: 50%;
-    display: inline-block;
-    vertical-align: top;
-    padding: 11px;
-  }
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    padding: 33px 11px;
+    @media screen and (min-width: 950px) {
+        width: 50%;
+        display: inline-block;
+        vertical-align: top;
+        padding: 11px;
+    }
 }
 
 .main-content .grid-item-image {
-  width: 100%;
-  padding-top: 440px;
-}
-
-@media screen and (min-width: 950px) {
-  .main-content .grid-item-image {
-    width: 50%;
-    display: inline-block;
-    vertical-align: top;
+    width: 100%;
     padding-top: 440px;
-  }
+    @media screen and (min-width: 950px) {
+        width: 50%;
+        display: inline-block;
+        vertical-align: top;
+        padding-top: 440px;
+    }
 }
 
 .grid-item-image-whoweare {
     display: none;
-}
-
-@media screen and (min-width: 950px) {
-  .grid-item-image-whoweare {
-    display: inline-block;
-  }
+    @media screen and (min-width: 950px) {
+        display: inline-block;
+    }
 }

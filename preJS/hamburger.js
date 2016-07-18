@@ -2,6 +2,6 @@ $(document).ready(function() {
   $('.nav-toggle').on('click', function() {
     event.preventDefault();
     $(this).toggleClass('active');
-    //$('.right ul').toggleClass("sl-Nav-hidden");
+    $('body').attr('data-mobile-nav', $('body').attr('data-mobile-nav') == 'hidden' ? 'visible' : 'hidden')
   });
 });

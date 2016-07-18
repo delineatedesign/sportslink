@@ -19,38 +19,43 @@
 
 </head>
 
-<body data-mobile-nav="hidden">
+<body>
 
-    <div class="overlay"></div>
+  <div class="overlay">
 
-    <div>
+  </div>
 
-        <!-- * 1. HEADER: SportsLink logo and navigation * -->
+  <div id="skrollr-body">
 
-        <div class="sl-SportsLinkHeaderWrapper">
-            <div class="sl-SportsLinkHeader">
+    <!--
+    * 1. HEADER
+    * sportslink logo and navigation
+    -->
+    <div class="header">
+    <div class="nav">
+      <!-- header logo -->
+      <div class="left">
+        <a href=""><img src="img/sportslink_logo.png" alt="Sports Link words in white on a black background" /></a>
+      </div>
+      <!-- header navigation -->
+      <div class="right">
+        <ul class="sl-Nav">
+          <li><a href="#whoweare">Who We Are</a></li>
+          <li><a href="#whatwedo">What We Do</a></li>
+          <li><a href="#clients">Clients</a></li>
+          <li><a href="#candidates">Candidates</a></li>
+          <li><a href="#footer">Upload CV</a></li>
+      </ul>
 
-                <!-- SportsLink header logo -->
-                <h1 class="sl-HeaderLogo" style="z-index: 30;">Sports Link. A leading international sports recruitment agency.</h1>
+      <div class="navicon">
+          <a class="nav-toggle" href="#"><span></span></a>
+      </div>
 
-                <!-- SportsLink header navigation -->
-                <div class="sl-HeaderNavWrapper">
-                    <ul class="sl-HeaderNav">
-                        <li class="sl-HeaderNavItem"><a href="#whoweare" class="sl-HeaderNavItem_Link">Who We Are</a></li>
-                        <li class="sl-HeaderNavItem"><a href="#whatwedo" class="sl-HeaderNavItem_Link">What We Do</a></li>
-                        <li class="sl-HeaderNavItem"><a href="#clients" class="sl-HeaderNavItem_Link">Clients</a></li>
-                        <li class="sl-HeaderNavItem"><a href="#candidates" class="sl-HeaderNavItem_Link">Candidates</a></li>
-                        <li class="sl-HeaderNavItem"><a href="#footer" class="sl-HeaderNavItem_Link">Upload CV</a></li>
-                        <li class="sl-HeaderNavItem"><a href="#contactus" class="sl-HeaderNavItem_Link">Contact Us</a></li>
-                    </ul>
-                </div>
+      </div>
 
-                <div class="sl-HeaderNavIcon  navicon">
-                    <a class="sl-HeaderNavIcon_Toggle  nav-toggle" href="#"><span></span></a>
-                </div>
+    </div>
 
-            </div> <!-- /.sl-SportsLinkHeader -->
-        </div> <!-- /.sl-SportsLinkHeaderWrapper -->
+    </div>
 
 
 
@@ -70,7 +75,7 @@
 
                   <div>
                     <h1 class="header-h1">We Connect</h1>
-                    <h2 class="header-h2">Carefully selected clients<br>&amp; outstanding <br>candidates</h2>
+                    <h2 class="header-h2">Carefully selected clients<br>&amp; outstanding candidates</h2>
                   </div>
 
                 </div>
@@ -87,9 +92,25 @@
     -->
 
     <div id="aboutus" class="au-Wrapper"  data--0-bottom-top="opacity: 0;"  data--0-bottom-bottom="opacity: 1;">
-      <!-- <h2 class="au-Heading">About Us</h2> -->
+      <h2 class="au-Heading">About Us</h2>
       <p class="au-Paragraph">SportsLink is a leading sports recruitment agency,<br>specialising in placing elite sports professionals<br>into career advancing job roles worldwide.</p>
     </div>
+
+    <!--
+      * 4. SUB NAVIGATION
+      * links to "who we are", "what we do", "clients", "candidates"
+    -->
+
+    <!--
+    <div class="submenuWrapper"  data-1700="top:100%;" data-2200="top:0%;" data-3000="display:block;" data-3700="top:-100%;display:none;">
+      <ul class="submenu">
+        <li><a href="#whoweare">Who we are</a></li>
+        <li><a href="#whatwedo">What we do</a></li>
+        <li><a href="#clients">Clients</a></li>
+        <li><a href="#candidates">Candidates</a></li>
+      </ul>
+    </div>
+    -->
 
     <!--
       * 5. MAIN CONTENT
@@ -110,20 +131,15 @@
       </div>
 
       <!-- What We Do-->
-      <div class="flex" style="font-size: 0;">
-        <div class="grid-item-image" style="background: slateblue url('img/sportslink_client.jpg'); -webkit-background-size: cover;background-size: cover; background-position: center center;" data--200-bottom-top=" -webkit-filter:grayscale(100%);filter:grayscale(100%)"  data--200-bottom-bottom="-webkit-filter:grayscale(0%);filter:grayscale(0%)">
+      <div class="flex" style="font-size: 0;" id="whatwedo">
+        <div class="grid-item-image" style="background: slateblue url('img/sportslink_header2.jpg'); -webkit-background-size: cover;background-size: cover; background-position: center center;" data--200-bottom-top=" -webkit-filter:grayscale(100%);filter:grayscale(100%)"  data--200-bottom-bottom="-webkit-filter:grayscale(0%);filter:grayscale(0%)">
         </div>
-        <div class="grid-item-text"  id="whatwedo" data--0-bottom-top="-webkit-transform:translateY(25%);transform:translateY(25%); opacity: 0;"  data--0-bottom-bottom="-webkit-transform:translateY(0%); transform:translateY(0%); opacity: 1;">
+        <div class="grid-item-text" data--0-bottom-top="-webkit-transform:translateY(25%);transform:translateY(25%); opacity: 0;"  data--0-bottom-bottom="-webkit-transform:translateY(0%); transform:translateY(0%); opacity: 1;">
           <h2>What We Do</h2>
-
-          <p>We offer flexible, temporary and permanent recruitment solutions that will deliver results.</p>
-
-          <p><strong>Our recruitment consultants</strong> offer in-depth industry knowledge and build strong, long term relationships with our clients.</p>
-
-          <p>Taking the time to source the best talent in the industry, each candidate is screened and vetted assuring only the best quality of candidates are presented to you.</p>
+          <p>We concentrate on building long term relationships with the leading clubs, brands, associations, venues and unions worldwide.</p>
+          <p>We act as the connection between carefully selected clients and outstanding candidates.</p>
+        </div>
       </div>
-      </div>
-
       <!-- Clients -->
       <div class="flex" style="font-size: 0;" id="clients">
         <div class="grid-item-text" data--0-bottom-top="-webkit-transform:translateY(25%);transform:translateY(25%); opacity: 0;"  data--0-bottom-bottom="-webkit-transform:translateY(0%); transform:translateY(0%); opacity: 1;">
@@ -134,7 +150,39 @@
         </div>
         <div class="grid-item-text" style="padding: 0;">
           <div style="height: 480px; font-size: 0;">
-
+            <!--
+            <div style="position: relative;display: inline-block; vertical-align: top; width: 50%; height: 240px; background-color: black; padding: 22px; box-sizing: border-box;">
+              <img src="img/sportslink_logo.png" alt="Sports Link words in white on a black background" width="180" style="position: absolute;top: 50%;left: 50%;-webkit-transform: translate(-50%, -50%);transform: translate(-50%, -50%);">
+            </div>
+            -->
+            <!--
+            *
+            * Client Image Silde 1
+            *
+            -->
+            <!--
+            <div style="display: inline-block; vertical-align: top;width: 50%; height: 240px;" class="box">
+              <section class="regular slider">
+                  <div style="background: #000 url('img/sportslink_testimonial1.jpg') center center no-repeat;-webkit-background-size: cover; background-size: cover;"></div>
+                  <div style="background: #222 url('img/sportslink_testimonial2.jpg') center center no-repeat;-webkit-background-size: cover; background-size: cover;"></div>
+                  <div style="background: #444 url('img/sportslink_testimonial3.jpg') center center no-repeat;-webkit-background-size: cover; background-size: cover;"></div>
+              </section>
+            </div>
+            -->
+            <!--
+            *
+            * Client Image Silde 2
+            *
+            -->
+            <!--
+            <div style="display: inline-block;vertical-align: top; width: 50%; height: 240px;">
+                <section class="regular slider">
+                    <div style="background: #000 url('img/sportslink_testimonial2.jpg') center center no-repeat;-webkit-background-size: cover; background-size: cover;"></div>
+                    <div style="background: #222 url('img/sportslink_testimonial3.jpg') center center no-repeat;-webkit-background-size: cover; background-size: cover;"></div>
+                    <div style="background: #444 url('img/sportslink_testimonial1.jpg') center center no-repeat;-webkit-background-size: cover; background-size: cover;"></div>
+                </section>
+            </div>
+            -->
             <!--
             *
             * change "background-color" and "color" to whatever you like
@@ -169,12 +217,10 @@
                     </div>
                     </div>
                     <div>
-                        <div class="sl-Slide-Testimonial" style="background-color: slategrey; color: white; font-size: 28px;">&ldquo;A fantastic opportunity<br>to connect with the best<br>in sports recruitment&rdquo;</div>
+                        <div class="sl-Slide-Testimonial" style="background-color: #6CF; color: white;">"A fantastic opportunity<br>to connect with the best<br>in sports recruitment"</div>
                     </div>
                     <div>
-                        <div class="sl-Slide-Testimonial" style="background: #000 url('img/sportslink_testimonial2.jpg') center center no-repeat;-webkit-background-size: cover; background-size: cover;">
-
-                        </div>
+                        <div class="sl-Slide-Testimonial" style="background-color: slateblue; color: white;">QUOTE 3</div>
                     </div>
               </section>
             </div>
@@ -182,8 +228,8 @@
         </div>
       </div>
       <!-- Candidates -->
-      <div class="flex" style="font-size: 0;">
-        <div class="grid-item-image"  id="candidates" style="background: indianred url('img/sportslink_CV.jpg');
+      <div class="flex" style="font-size: 0;" id="candidates">
+        <div class="grid-item-image" style="background: indianred url('img/sportslink_candidate.jpg');
       -webkit-background-size: cover;background-size: cover; background-position: center center;position: relative;"  data--200-bottom-top=" -webkit-filter:grayscale(100%);filter:grayscale(100%)"  data--200-bottom-bottom="-webkit-filter:grayscale(0%);filter:grayscale(0%)">
           <div id="uploadcv" style="position: absolute;top: 50%;left: 50%;margin-left: -150px;  margin-top: -150px;width: 300px;  padding-top: 300px;border-radius: 999px;background-color: rgba(0, 0, 0, .6);">
 
@@ -228,7 +274,7 @@
                         </form>
                     </div>
 
-                    <div class="footer-form  footer-form-contactus" id="contactus">
+                    <div class="footer-form  footer-form-contactus">
                         <h2>CONTACT US</h2>
                         <form>
                             <p><label>Your Name (required)</label></p>
@@ -244,12 +290,17 @@
                     </div>
                 </div>
             </div>
-            <p style="color: #fff; text-align: center; font-size: 12px; padding-top: 66px; line-height: 1.5;">Copyright &copy; 2016 SportsLink | Dunston Business Village | Stafford Road | Dunston | Stafford ST18 9AB</p>
+            <p style="color: #fff; text-align: center; font-size: 12px; padding-top: 66px;">Copyright © 2016 SportsLink</p>
         </div>
     </div>
 
+
   <!-- THE CLOSING  -->
   </div><!-- /#skrollr-body -->
+
+  <!--
+  <div style="display: block; position: absolute; top: 0; left: 0; right: 0; bottom: 0; width: 100%; background-color: #000; color: #fff; display: flex; justify-content: center; align-items: center;">Something here</div>
+  -->
 
   <!--
   * JAVASCRIPTS
@@ -261,7 +312,7 @@
   <![endif]-->
 
 <!--
-* Full screen header slideshow images - if adding more, don't forget the comma between each image, but not the last
+* Full screen header slideshow images - if adding more, don't forget the comma
 -->
 
 <script>
@@ -273,18 +324,15 @@ $(".wrapper").backstretch([
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     if (scroll >= 200) {
-        $('.sl-SportsLinkHeaderWrapper').addClass("nav-shadow");
+        $('.header').addClass("nav-shadow");
     }
     else {
-        $('.sl-SportsLinkHeaderWrapper').removeClass("nav-shadow");
+        $('.header').removeClass("nav-shadow");
     }
 });
-
-/*
 skrollr.init({
     forceHeight: false
 });
-*/
 </script>
 
 </body>
