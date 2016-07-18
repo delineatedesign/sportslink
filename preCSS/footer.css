@@ -125,7 +125,8 @@ input[type="submit"],
 
 .emf-upload-button {
     text-align: center !important;
-    width: 100% !important;
+    display: block;
+    margin: 0 auto;
 }
 
 .emf-upload-widget a {
@@ -145,5 +146,5 @@ input[type="submit"],
     margin: 5px 0;
     clear: both;
     font-size: 9pt;
-    background: seagreen !important;
+    background: #ccc !important;
 }
