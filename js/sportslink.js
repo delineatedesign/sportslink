@@ -425,6 +425,7 @@ $(document).ready(function() {
       });
     });
 
+/*
     $('.link-uploadcv').on('click', function(e) {
         $('.footer-form-contactus').css('opacity','.25');
         $('.footer-form-uploadcv').css('opacity','1');
@@ -439,7 +440,7 @@ $(document).ready(function() {
         $('.footer-form-uploadcv').css('opacity','1');
         $('.footer-form-contactus').css('opacity','1');
     });
-
+*/
 });
 
 /*
