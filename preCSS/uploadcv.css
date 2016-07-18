@@ -1,0 +1,12 @@
+.uploadcv-desktop {
+    display: none;
+}
+
+@media (min-width: 950px) {
+    .uploadcv-mobile {
+        display: none;
+    }
+    .uploadcv-desktop {
+        display: inline-block;
+    }
+}
