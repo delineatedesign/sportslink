@@ -34,7 +34,6 @@
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 24px;
     color: #fff;
     text-shadow: 1px 0 #bbb;
 }
@@ -76,8 +75,9 @@ input[type="submit"] {
 
 label {
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 11px;
+    font-weight: 400 !important;
 }
 
 input:focus,
@@ -109,7 +109,8 @@ input {
 
 
 input[type="button"],
-input[type="submit"] {
+input[type="submit"],
+.button-round {
     height: 88px;
     width: 88px;
     background-color: #000;
@@ -118,5 +119,26 @@ input[type="submit"] {
     display: inline-block;
     border: 0;
     border-radius: 88px !important;
-    font-size: 12px;
+    font-size: 12px !important;
+    text-transform: uppercase;
+}
+
+.emf-upload-button {
+    text-align: center !important;
+    width: 100% !important;
+}
+
+.emf-upload-widget a {
+    text-decoration: underline;
+    color:  #fff !important;
+}
+
+#emf-container ul li label.emf-label-desc span {
+    color: #fff !important;
+}
+
+
+.emf-upload-progress .emf-upload-status {
+    font-weight: 700;
+    color: seagreen;
 }

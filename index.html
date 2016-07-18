@@ -273,18 +273,24 @@
     <ul>
 <li id="emf-li-0" class="emf-li-field emf-field-radio data_container   ">
 <label class="emf-label-desc" for="element_0">Please check the appropriate form for you</label>
-<div class="emf-div-field"><div my_choice_order_type=""><div class="two_column" ><input id="element_0_0" name="element_0" value="General Enquiry"
+<div class="emf-div-field">
+
+
+    <div my_choice_order_type="" style="width: 80%; margin: 0 auto;">
+
+
+        <div class="two_column" ><input id="element_0_0" name="element_0" value="General Enquiry"
 			class="validate[optional]" checked="checked" type="radio" onchange="toggle_emf_element(EMF_jQuery(this).parents('.emf-li-field').find('.emf-allow-other input'), false)"/><label class="padleft-w5" for="element_0_0">General Enquiry</label></div><div class="two_column" ><input id="element_0_1" name="element_0" value="CV Upload"
 			class="validate[optional]"  type="radio" onchange="toggle_emf_element(EMF_jQuery(this).parents('.emf-li-field').find('.emf-allow-other input'), false)"/><label class="padleft-w5" for="element_0_1">CV Upload</label></div></div></div>
 <div class="emf-clear"></div>
 </li><li id="emf-li-1" class="emf-li-field emf-field-text data_container   ">
-<label class="emf-label-desc" for="element_1">Your Name <span>*</span></label>
+<label class="emf-label-desc" for="element_1">Your Name <span>(required)</span></label>
 <div class="emf-div-field"><input id="element_1" name="element_1" value="" style="width:100%" type="text"
 
 				class="validate[required]"/></div>
 <div class="emf-clear"></div>
 </li><li id="emf-li-2" class="emf-li-field emf-field-email data_container   ">
-<label class="emf-label-desc" for="element_2">Email <span>*</span></label>
+<label class="emf-label-desc" for="element_2">Email <span>(required)</span></label>
 <div class="emf-div-field"><input id="element_2" name="element_2"
 				class="validate[required,custom[email]]"
 				value="" style="width:100%" type="text" /></div>
@@ -299,7 +305,7 @@
 <div class="emf-div-field">
 <div class='emf-upload-widget' id='emf-upload-widget-for-element_4'>
 <div class='emf-upload-button'>
-<a href='javascript:void(0)'>Add File</a>
+<a href='javascript:void(0)' >Add File</a>
 <input type='file' onchange="upload_file_with_progress($(this).parents('.emf-upload-widget'), '3388792', '45418471','', null, '10M');">
 </div>
 <input type='hidden' id='element_4' name='element_4'>
@@ -336,7 +342,7 @@
 </noscript></div>
 </li>
 <li id="emf-li-post-button" class="middle">
-<input  value="Submit" type="submit" onmouseover="return true;"/>
+<input  value="Send" type="submit" onmouseover="return true;"/>
 </li>
 </ul>
 <input name="element_counts" value="5" type="hidden" />
