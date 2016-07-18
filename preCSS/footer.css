@@ -138,7 +138,12 @@ input[type="submit"],
 }
 
 
-.emf-upload-progress .emf-upload-status {
-    font-weight: 700;
-    color: seagreen;
+.emf-upload-progress {
+    border: 0 !important;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 5px 0;
+    clear: both;
+    font-size: 9pt;
+    background: seagreen !important;
 }
