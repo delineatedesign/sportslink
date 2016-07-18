@@ -43,6 +43,7 @@
     color: #fff;
 }
 
+/*
 .footer-form input,
 textarea {
     width: 100%;
@@ -58,12 +59,14 @@ textarea {
     font-size: 14px;
 }
 
+*/
+
 input[type="button"],
 input[type="submit"] {
     height: 88px;
     width: 88px;
     background-color: #000;
-    color: #fff;
+    color: #fff !important;
     border: 0;
     display: inline-block;
     border: 0;
