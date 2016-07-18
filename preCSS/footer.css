@@ -123,6 +123,10 @@ input[type="submit"],
     text-transform: uppercase;
 }
 
+#emf-container-outer{
+    padding-top: 0 !important;
+}
+
 .emf-upload-button {
     text-align: center !important;
     display: block;
@@ -160,4 +164,8 @@ input[type="submit"],
 .uploadcv-footer-heading {
     transition: all .35s ease;
     padding: 0 11px;
+}
+
+.emf-field-radio {
+    margin-bottom: 22px !important;
 }
