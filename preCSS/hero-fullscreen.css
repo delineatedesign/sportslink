@@ -6,15 +6,6 @@
 .full-height {
   min-height: 100%;
   height: 100vh;
-}
-
-.full-height {
-  height: 100vh;
-  /*background-image: url("../img/swim.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;*/
   text-align: center;
   overflow: hidden;
   z-index: 0 !important;

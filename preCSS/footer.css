@@ -22,15 +22,10 @@
     text-align: center;
     margin: 0 33px;
     transition: opacity .35s;
-    width: 100%;
-    margin: 0 auto 55px;
     padding: 0 44px;
     @media screen and (min-width: 768px) {
         display: inline-block;
         vertical-align: top;
-        margin: 0 22px 55px;
-        padding: 0;
-        width: 300px;
     }
 }
 
