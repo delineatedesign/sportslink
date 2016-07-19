@@ -43,3 +43,7 @@ h1, h2, h3, h4 {
     filter:grayscale(0%);
     transition: opacity .35s ease;
 }
+
+b, strong {
+    font-weight: 700 !important;
+}
