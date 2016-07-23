@@ -21,6 +21,7 @@
 
 <body data-mobile-nav="hidden">
 
+    <!-- while content loads show a dark overlay on screen -->
     <div class="overlay"></div>
 
     <div>
@@ -45,6 +46,7 @@
                     </ul>
                 </div>
 
+                <!-- Mobile navigation toggle (hamburger icon) -->
                 <div class="sl-HeaderNavIcon  navicon">
                     <a class="sl-HeaderNavIcon_Toggle  nav-toggle" href="#"><span></span></a>
                 </div>
@@ -53,32 +55,22 @@
         </div> <!-- /.sl-SportsLinkHeaderWrapper -->
 
 
+        <!-- * 2. FULLSCREEN HEADING w/ background image slider: width 100% height 100% * -->
 
-    <!--
-      * 2. FULLSCREEN HEADING WITH BACKGROUND IMAGE
-      * width 100% height 100%
-      * i need to tidy this up, too many unnecessary divs!
-    -->
-
-    <div class="wrapper  backstretch">
-      <div class="full-height">
-
-          <div style="position: absolute; top: 0; right: 0; bottom: 0; left: 0;">
-            <div class="center-heroWrapper">
-              <div class="center-hero" >
-
-
-                  <div>
-                    <h1 class="header-h1">We Connect</h1>
-                    <h2 class="header-h2">Carefully selected<br> clients &amp; outstanding <br>candidates</h2>
+        <div class="wrapper  backstretch">
+          <div class="full-height">
+              <div style="position: absolute; top: 0; right: 0; bottom: 0; left: 0;">
+                <div class="center-heroWrapper">
+                  <div class="center-hero">
+                      <div>
+                          <h1 class="header-h1">We Connect</h1>
+                          <h2 class="header-h2">Carefully selected<br> clients &amp; outstanding <br>candidates</h2>
+                      </div>
                   </div>
-
+                </div>
               </div>
-            </div>
           </div>
-
-      </div>
-    </div>
+        </div>
 
     <!--
       * 3. ABOUT US
@@ -100,8 +92,10 @@
       <div class="flex" style="font-size: 0;" id="whoweare">
         <div class="grid-item-text">
           <h2>Who We Are</h2>
-          <p>We concentrate on building long term relationships with the <strong>leading clubs</strong>, <strong>brands</strong>, <strong>associations</strong>, <strong>venues</strong> and <strong>unions worldwide</strong>.</p>
-          <p>We act as the connection between carefully selected <strong>clients</strong> and outstanding <strong>candidates</strong>.</p>
+
+          <p>After a 15 year professional football career,
+Jay Smith had a desire to create something new and innovative to offer the world of sport. Utilising his high quality contacts to work closely with <strong>elite players</strong>, <strong>premier league football clubs</strong>, the <strong>Professional Footballers' Association</strong> and the <strong>world's best luxury brands</strong>.</p>
+
         </div>
         <div class="grid-item-image  grid-item-image-whoweare" style="background: slateblue url('img/sportslink_candidate.jpg');-webkit-background-size: cover;background-size: cover;background-position: center center;">
         </div>
@@ -114,11 +108,10 @@
         <div class="grid-item-text"  id="whatwedo">
           <h2>What We Do</h2>
 
-          <p>We offer flexible, temporary and permanent recruitment solutions that will deliver results.</p>
+          <p>We concentrate on building long term relationships with the <strong>leading clubs</strong>, <strong>brands</strong>, <strong>associations</strong>, <strong>venues</strong> and <strong>unions worldwide</strong>.</p>
 
-          <p><strong>Our recruitment consultants</strong> offer in-depth industry knowledge and build strong, long term relationships with our clients.</p>
+          <p>We act as the connection between carefully selected clients and outstanding candidates.</p>
 
-          <p>Taking the time to source the best talent in the industry, each candidate is screened and vetted assuring only the best quality of candidates are presented to you.</p>
       </div>
       </div>
 
@@ -155,7 +148,7 @@
         <div class="grid-item-text">
           <h2>Clients</h2>
           <p>We offer flexible, temporary and permanent recruitment solutions that will deliver results.</p>
-          <p>Our recruitment consultants offer in-depth industry knowledge and build strong, long term relationships with our clients.</p>
+          <p><strong>Our recruitment consultants</strong> offer in-depth industry knowledge and build strong, long term relationships with our clients.</p>
           <p>Taking the time to source the best talent in the industry, each candidate is screened and vetted assuring only the best quality of candidates are presented to you.</p>
         </div>
         <div class="grid-item-text" style="padding: 0;">
@@ -192,21 +185,22 @@
                     <div>
                         <div id="basic-waypoint" class="sl-Slide-Testimonial" style="background-color: #000; color: white; position: relative;">
                         <img src="img/sportslink_logo.png" alt="Sports Link words in white on a black background"  style="position: absolute;top: 50%;left: 50%;-webkit-transform: translate(-50%, -50%);transform: translate(-50%, -50%);">
-                    </div>
-                    </div>
-                    <div>
-                        <div class="sl-Slide-Testimonial" style="background-color: slategrey; color: white; font-size: 28px;">&ldquo;A fantastic opportunity<br>to connect with the best<br>in sports recruitment&rdquo;</div>
-                    </div>
-                    <div>
-                        <div class="sl-Slide-Testimonial" style="background: #000 url('img/sportslink_testimonial2.jpg') center center no-repeat; -webkit-background-size: cover; background-size: cover;">
-
                         </div>
                     </div>
-              </section>
+
+                    <div>
+                        <div class="sl-Slide-Testimonial" style="background: slategrey url('img/sportslink_testimonial2.jpg') center center no-repeat; -webkit-background-size: cover; background-size: cover; color: white; font-size: 28px; text-shadow: 1px 0 #333;">&ldquo;A fantastic opportunity<br>to connect with the best<br>in sports recruitment&rdquo;</div>
+                    </div>
+                    <!--
+                    <div>
+                        <div class="sl-Slide-Testimonial" style="background: #000 url('img/sportslink_testimonial2.jpg') center center no-repeat; -webkit-background-size: cover; background-size: cover;"></div>
+                    </div>
+                    -->
+                </section>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
+</div>
       <!-- Candidates -->
       <div class="flex" style="font-size: 0;">
         <div class="grid-item-image  uploadcv-desktop"  style="background: indianred url('img/sportslink_CV.jpg');
@@ -254,15 +248,10 @@
 
                         <!-- * Emailmeform code goes here * -->
 
-                        <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="//assets.emailmeform.com/styles/dynamic.php?t=post&enable_responsive_ui=1&RU1GLTAyLTI3" />
-<link href='//fonts.googleapis.com/css?family=Lato|Lato|Lato|Lato|Lato|Lato' rel='stylesheet' type='text/css'/>
-<link href='//fonts.googleapis.com/css?family=Lato|Lato' rel='stylesheet' type='text/css'/>
 
 <style>
-#emf-container, #emf-container-outer #emf-form-shadows{box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;width:640px; text-align: center;}
+#emf-container, #emf-container-outer #emf-form-shadows{box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;width:600px; text-align: center;}
 @media screen and (max-width: 656px) {#emf-container,#emf-container-outer #emf-form-shadows {width: 100%;} }
 </style>
 <div id="emf-container-outer">
@@ -283,7 +272,7 @@
 			class="validate[optional]" checked="checked" type="radio" onchange="toggle_emf_element(EMF_jQuery(this).parents('.emf-li-field').find('.emf-allow-other input'), false)"/><label class="padleft-w5" for="element_0_0" style="margin-right: 22px;">General Enquiry</label>
 
         <input id="element_0_1" name="element_0" value="CV Upload"
-			class="validate[optional]"  type="radio" onchange="toggle_emf_element(EMF_jQuery(this).parents('.emf-li-field').find('.emf-allow-other input'), false)"/><label class="padleft-w5" for="element_0_1">CV Upload</label></div>
+			class="validate[optional]"  type="radio" onchange="toggle_emf_element(EMF_jQuery(this).parents('.emf-li-field').find('.emf-allow-other input'), false)"/><label class="padleft-w5" for="element_0_1">Upload CV</label></div>
 
         </div></div>
 <div class="emf-clear"></div>
@@ -676,7 +665,7 @@ var emf_index_to_option_map=[];
 
                 </div>
             </div>
-            <p style="color: #fff; text-align: center; font-size: 12px; padding-top: 66px; line-height: 1.5;">Copyright &copy; 2016 SportsLink | Dunston Business Village | Stafford Road | Dunston | Stafford ST18 9AB</p>
+            <p style="color: #fff; text-align: center; font-size: 12px; padding-top: 66px; line-height: 1.5;">Copyright &copy; 2016 SportsLink | Prospect House | Stafford Road | Dunston | Stafford ST18 9AB</p>
         </div>
     </div>
 

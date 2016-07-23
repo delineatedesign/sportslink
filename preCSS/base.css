@@ -20,7 +20,7 @@ h1, h2, h3, h4 {
 }
 
 .overlay {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
@@ -29,7 +29,7 @@ h1, h2, h3, h4 {
     width: 100%;
     background-color: #000;
     overflow: hidden;
-    z-index: 2;
+    z-index: 100;
 }
 
 .invisible {

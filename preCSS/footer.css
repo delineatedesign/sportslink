@@ -164,6 +164,7 @@ input[type="submit"],
 .uploadcv-footer-heading {
     transition: all .35s ease;
     padding: 0 11px;
+    text-shadow: 1px 0 #bbb;
 }
 
 .emf-field-radio {
