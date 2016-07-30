@@ -1,21 +1,17 @@
-$(window).load(function() {
-  setTimeout(function(){
-  $('.overlay').fadeOut(2000);
-}, 0);
-});
-
-$('body').css({'width' : '100%','height': '100%'});
+/* fade out black cricle header banner on scroll */
 
 $(window).scroll(function () {
     var scrollTop = $(window).scrollTop();
     var height = $(window).height();
 
-    $('.center-heroWrapper').css({
+    $('.sl-Banner_TextWrapper').css({
         'opacity': ((height - scrollTop) / height)
     });
 });
 
 $(document).ready(function() {
+
+    /* smooth scroll to anchor */
 
     $(function() {
       $('a[href*="#"]:not([href="#"])').on('click', function() {
@@ -27,7 +23,7 @@ $(document).ready(function() {
           target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
           if (target.length) {
             $('html, body').animate({
-              scrollTop: target.offset().top - 88
+              scrollTop: target.offset().top
             }, 1000);
             return false;
           }
@@ -35,39 +31,25 @@ $(document).ready(function() {
       });
     });
 
+    /* Footer form */
+
     if($('#element_0_0').is(':checked')) {
         $('.uploadcv-footer-heading').css('opacity','.25');
         $('.contactus-footer-heading').css('opacity','1');
-     }
+    }
 
-$('#element_0_0').click(function() {
+     $('#element_0_0').click(function() {
        if($('#element_0_0').is(':checked')) {
            $('.uploadcv-footer-heading').css('opacity','.25');
            $('.contactus-footer-heading').css('opacity','1');
         }
     });
 
-$('#element_0_1').click(function() {
+    $('#element_0_1').click(function() {
         if($('#element_0_1').is(':checked')) {
             $('.uploadcv-footer-heading').css('opacity','1');
             $('.contactus-footer-heading').css('opacity','.25');
          }
-});
+     });
 
-/*
-    $('.link-uploadcv').on('click', function(e) {
-        $('.footer-form-contactus').css('opacity','.25');
-        $('.footer-form-uploadcv').css('opacity','1');
-    });
-
-    $('.link-contactus').on('click', function(e) {
-        $('.footer-form-uploadcv').css('opacity','.25');
-        $('.footer-form-contactus').css('opacity','1');
-    });
-
-    $('.footer-form').on('click', function(e) {
-        $('.footer-form-uploadcv').css('opacity','1');
-        $('.footer-form-contactus').css('opacity','1');
-    });
-*/
 });

@@ -388,19 +388,11 @@ $(document).ready(function() {
   });
 });
 
-$(window).load(function() {
-  setTimeout(function(){
-  $('.overlay').fadeOut(2000);
-}, 0);
-});
-
-$('body').css({'width' : '100%','height': '100%'});
-
 $(window).scroll(function () {
     var scrollTop = $(window).scrollTop();
     var height = $(window).height();
 
-    $('.center-heroWrapper').css({
+    $('.sl-Banner_TextWrapper').css({
         'opacity': ((height - scrollTop) / height)
     });
 });
@@ -417,7 +409,7 @@ $(document).ready(function() {
           target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
           if (target.length) {
             $('html, body').animate({
-              scrollTop: target.offset().top - 88
+              scrollTop: target.offset().top
             }, 1000);
             return false;
           }
