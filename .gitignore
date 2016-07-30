@@ -1,7 +1,9 @@
 .git
 node_modules
 modules
-
+index-backup_v1.html
+index-backup_v2.html
+.stylelintrc
 
 # Compiled source #
 ###################
