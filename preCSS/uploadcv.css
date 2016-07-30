@@ -10,3 +10,41 @@
         display: inline-block;
     }
 }
+
+.fullLink {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -150px;
+    width: 300px;
+    height: 300px;
+    border-radius: 999px;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.fullLinkInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.word-upload {
+    color: #fff; font-size: 32px; font-weight: 700;
+}
+
+.word-cv {
+    text-align: center;
+    display: inine-block;
+    border-radius: 999px;
+    font-size: 32px;
+    font-weight: 700;
+    width: 64px;
+    line-height: 64px;
+    background: white;
+    color: #000;
+    margin-left: 6px;
+}

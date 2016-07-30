@@ -30,32 +30,46 @@
 }
 
 .footer-form h2 {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
     color: #fff;
     text-shadow: 1px 0 #bbb;
+    @media screen and (min-width: 950px) {
+        font-size: 32px;
+    }
 }
 
 .footer-form p {
     color: #fff;
 }
 
+.contactus-footer-heading,
+.uploadcv-footer-heading {
+    transition: all .35s ease;
+    padding: 0 6px;
+    text-shadow: 1px 0 #bbb;
+    @media screen and (min-width: 950px) {
+        padding: 0 11px;
+    }
+}
+
+
 /*
 .footer-form input,
 textarea {
-    width: 100%;
-    border: 0;
-    -webkit-appearance: none;
-    appearance: none;
-    border-radius: 3px;
-    padding: 11px;
+width: 100%;
+border: 0;
+-webkit-appearance: none;
+appearance: none;
+border-radius: 3px;
+padding: 11px;
 }
 
 textarea {
-    min-height: 110px;
-    font-size: 14px;
+min-height: 110px;
+font-size: 14px;
 }
 
 */
@@ -94,20 +108,6 @@ input {
     justify-content: center;
 }
 
-#emf-form input {
-    padding: 11px 0 !important;
-    border: 0;
-    border-radius: 3px;
-}
-
-#emf-form textarea {
-    padding: 11px;
-    display: block;
-    border: 0;
-    border-radius: 3px;
-}
-
-
 input[type="button"],
 input[type="submit"],
 .button-round {
@@ -123,8 +123,57 @@ input[type="submit"],
     text-transform: uppercase;
 }
 
+/**
+* emailmeform overrides
+*/
+
+#emf-container, #emf-container-outer #emf-form-shadows{
+    box-sizing: border-box !important;
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    width:600px !important;
+    text-align: center !important;
+}
+
+@media screen and (max-width: 656px) {
+    #emf-container,#emf-container-outer #emf-form-shadows {
+        width: 100% !important;
+    }
+}
+
+
 #emf-container-outer{
-    padding-top: 0 !important;
+    padding: 0 !important;
+}
+
+#emf-form {
+    padding: 0 11px !important;
+}
+
+#emf-form-description {
+    font-size: 18px !important;
+    color: #fff !important;
+}
+
+#emf-container ul li {
+    margin: 0 0 11px !important;
+    padding: 0 !important;
+    width: 100%;
+    vertical-align: top;
+    clear: both;
+}
+
+#emf-form input {
+    padding: 11px !important;
+    border: 0;
+    border-radius: 3px;
+}
+
+#emf-form textarea {
+    padding: 11px;
+    display: block;
+    border: 0;
+    border-radius: 3px;
 }
 
 .emf-upload-button {
@@ -142,7 +191,6 @@ input[type="submit"],
     color: #fff !important;
 }
 
-
 .emf-upload-progress {
     border: 0 !important;
     border-radius: 5px;
@@ -159,14 +207,32 @@ input[type="submit"],
     color: #404040 !important;
 }
 
-
-.contactus-footer-heading,
-.uploadcv-footer-heading {
-    transition: all .35s ease;
-    padding: 0 11px;
-    text-shadow: 1px 0 #bbb;
-}
-
 .emf-field-radio {
     margin-bottom: 22px !important;
+}
+
+/**
+*  form required field error tool tip
+*/
+.formError .formErrorContent {
+    background: #333 !important;
+}
+.formError .formErrorArrow div {
+    background: #333 !important;
+}
+
+.emf-upload-widget a {
+    text-decoration: none !important;
+    color: #fff;
+    font-size: 14px;
+}
+
+.emf-upload-progress {
+    margin: 12px !important;
+    font-size: 14px !important;
+}
+
+.emf-head-widget {
+    border-bottom: none !important;
+    padding: 11px 0 22px !important;
 }

@@ -4,30 +4,31 @@
 */
 
 .au-Wrapper {
-  text-align: center;
-  padding: 33px 22px;
-  background-color: #ddd;
-  @media screen and (min-width: 950px) {
-      padding: 66px 22px;
-  }
+    text-align: center;
+    padding: 33px 22px;
+    background-color: #ddd;
+    @media screen and (min-width: 950px) {
+        padding: 66px 22px;
+    }
 }
 
 .au-Heading {
-  font-size: 24px;
-  text-transform: uppercase;
-  margin-bottom: 22px;
-  @media screen and (min-width: 950px) {
-      font-size: 48px;
-  }
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    @media screen and (min-width: 950px) {
+        font-size: 48px;
+    }
 }
 
 .au-Paragraph {
-  font-size: 24px;
-  line-height: 32px;
-  margin: 0;
-  color: #404040;
-  @media screen and (min-width: 950px) {
-      font-size: 28px;
-      line-height: 40px;
-  }
+    font-size: 24px;
+    line-height: 32px;
+    max-width: 650px;
+    margin: 0 auto;
+    color: #404040;
+    @media screen and (min-width: 950px) {
+        font-size: 28px;
+        line-height: 40px;
+    }
 }

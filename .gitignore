@@ -1,6 +1,8 @@
 .git
 node_modules
 modules
+preCSS
+preJS
 
 # Compiled source #
 ###################

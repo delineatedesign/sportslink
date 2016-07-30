@@ -5,7 +5,13 @@
 @import "hero-fullscreen.css";
 @import "aboutus.css";
 @import "submenu.css";
-@import "maincontent.css";
+
+@import "contentmodulewrapper.css";
+@import "contentmodule.css";
 @import "uploadcv.css";
+
+@import "clienttestimonial.css";
+
 @import "slick.css";
 @import "footer.css";
+@import "footercopyright.css";
