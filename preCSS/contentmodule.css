@@ -74,6 +74,8 @@
     width: 100%;
     padding-top: 440px;
     background-size: cover;
+    filter: grayscale(100%);
+    transition: .35s all linear;
     background-position: center center;
     @media screen and (min-width: 950px) {
         width: 50%;
@@ -81,6 +83,10 @@
         vertical-align: top;
         padding-top: 440px;
     }
+}
+
+.heyo {
+    filter: grayscale(0%);
 }
 
 .mc-ContentModule_Image-whoweare {

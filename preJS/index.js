@@ -1,13 +1,4 @@
-/* fade out black cricle header banner on scroll */
 
-$(window).scroll(function () {
-    var scrollTop = $(window).scrollTop();
-    var height = $(window).height();
-
-    $('.sl-Banner_TextWrapper').css({
-        'opacity': ((height - scrollTop) / height)
-    });
-});
 
 $(document).ready(function() {
 
@@ -15,6 +6,7 @@ $(document).ready(function() {
 
     $(function() {
       $('a[href*="#"]:not([href="#"])').on('click', function() {
+
         $('body').attr('data-mobile-nav','hidden');
         $('.nav-toggle').removeClass('active');
 
@@ -52,4 +44,31 @@ $(document).ready(function() {
          }
      });
 
+});
+
+$(window).on("load",function() {
+  $(window).scroll(function() {
+
+      var scrollTop = $(window).scrollTop();
+      var height = $(window).height();
+
+      $('.sl-Banner_TextWrapper').css({
+          'opacity': ((height - scrollTop) / height)
+      });
+
+    $(".fade").each(function() {
+      /* Check the location of each desired element */
+      var objectBottom = $(this).offset().top + $(this).outerHeight();
+      var windowBottom = $(window).scrollTop() + $(window).innerHeight();
+
+      /* If the element is completely within bounds of the window, fade it in */
+      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+        //if ($(this).css("opacity")==0.25) {$(this).fadeTo(500,1);}
+        $(this).addClass('heyo');
+      } else { //object goes out of view (scrolling up)
+        //if ($(this).css("opacity")==1) {$(this).fadeTo(500,0.25);}
+        $(this).removeClass('heyo');
+      }
+    });
+  }); $(window).scroll(); //invoke scroll-handler on page-load
 });
